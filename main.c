@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 20:22:08 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 21:47:07 by stales           ###   ########.fr       */
+/*   Created: 2022/02/17 14:37:57 by stales            #+#    #+#             */
+/*   Updated: 2022/02/17 17:13:19 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(char *s1, char *s2)
+int main(void)
 {
-	while (*s1 && *s2 && *s1++ == *s2)
-		s2++;
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	char	hel[0x100];
+
+	ft_memcpy(hel, "hello", 5);
+	ft_putstr(hel);
+	ft_memset(hel, 's', 1);
+	ft_bzero(hel, 1);
+
+	return (0);
 }

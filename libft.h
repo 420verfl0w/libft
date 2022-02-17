@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 20:08:46 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 20:10:48 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/17 21:44:53 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 typedef unsigned long	t_size;
+
 void	*ft_memset(void *s, int c, t_size n);
 void	*ft_memcpy(void *dest, const void *src, t_size n);
 void	*ft_memccpy(void *dest, const void *src, int c, t_size n);
@@ -29,6 +30,8 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_isblank(int c);
+int		ft_strcmp(char *s1, char *s2);
+int		ft_strncmp(char *s1, char *s2, t_size n);
 void	ft_putstr(char const *s);
 void	ft_putchar(char c);
 void	ft_bzero(void *s, t_size n);

@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 20:22:08 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 21:47:07 by stales           ###   ########.fr       */
+/*   Created: 2022/02/17 21:41:43 by stales            #+#    #+#             */
+/*   Updated: 2022/02/17 21:50:29 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strncmp(char *s1, char *s2, t_size n)
 {
-	while (*s1 && *s2 && *s1++ == *s2)
+	if (!n)
+		return (0);
+	while (*s1 && *s2 && --n && *s1++ == *s2)
 		s2++;
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
