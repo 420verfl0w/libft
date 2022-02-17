@@ -7,7 +7,7 @@ Our Libft
 
 |Fonctions|is_done ?|is_good ?|
 |:-------:|:-------:|:-------:|
-|ft_atoi|❌|❌|
+|ft_atoi|✔️|✔️|
 |ft_bzero|✔️|✔️|
 |ft_calloc|❌|❌|
 |ft_isalnum|✔️|✔️|
@@ -71,7 +71,7 @@ Our Libft
 
 |Fonctions|is_done ?|is_good ?|
 |:-------:|:-------:|:-------:|
-|ft_isblank|❌|❌|
+|ft_isblank|✔️|✔️|
 |ft_iscntrl|❌|❌|
 |ft_isgraph|❌|❌|
 |ft_islower|❌|❌|
