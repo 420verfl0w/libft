@@ -6,14 +6,14 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/17 18:22:30 by stales           ###   ########.fr        #
+#    Updated: 2022/02/17 19:22:33 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 
 SRCS			=	ft_memset.c ft_bzero.c ft_memcpy.c ft_putstr.c ft_memccpy.c ft_strlen.c \
-					ft_strcpy.c ft_putchar.c
+					ft_strcpy.c ft_putchar.c ft_atoi.c
 OBJS			= $(SRCS:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
 
