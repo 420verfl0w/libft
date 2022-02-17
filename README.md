@@ -21,7 +21,7 @@ Our Libft
 |ft_isprint|✔️|
 |ft_memccpy|✔️|
 |ft_memchr|✔️|
-|ft_memcmp|❌|
+|ft_memcmp|✔️|
 |ft_memcpy|✔️|
 |ft_memmove|✔️|
 |ft_memset|✔️|

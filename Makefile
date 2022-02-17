@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/17 23:54:23 by stales           ###   ########.fr        #
+#    Updated: 2022/02/18 00:03:24 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,8 @@ SRCS			=	ft_memset.c \
 					ft_memmove.c \
 					ft_strncat.c \
 					ft_strnstr.c \
-					ft_calloc.c
+					ft_calloc.c \
+					ft_memcmp.c
 OBJS			= $(SRCS:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
 

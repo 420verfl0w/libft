@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:43:54 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 23:50:49 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/18 00:00:12 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int		ft_tolower(int c);
 int		ft_isblank(int c);
 int		ft_strcmp(char *s1, char *s2);
 int		ft_strncmp(char *s1, char *s2, t_size n);
+int		ft_memcmp(const void *s1, const void *s2, t_size n);
 void	ft_putstr(char const *s);
 void	ft_putchar(char c);
 void	ft_bzero(void *s, t_size n);
