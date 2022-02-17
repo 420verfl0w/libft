@@ -1,6 +1,9 @@
 NAME = libft
 CFLAGS = -Wall -Wextra -Werror -I includes
-SRC = src/memset.c
+SRC = src/ft_memset.c \
+		src/ft_bzero.c \
+		src/ft_memcpy.c \
+		src/ft_putstr.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
