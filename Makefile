@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/18 00:09:55 by stales           ###   ########.fr        #
+#    Updated: 2022/02/18 00:30:07 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,8 +48,13 @@ NAME			= libft.a
 
 all:			$(NAME)
 
+%.o: %.c
+	@echo "\033[38;5;82m[\033[94m+\033[38;5;82m] Creation of the object \033[38;5;226m$< \033[32;5;85m -> \033[38;5;226m $@ \033[00m"
+	@$(CC) $(CFLAGS) -o $@ -c $<
+	
 $(NAME):		$(OBJS)
-				ar rcs $(NAME) $(OBJS)
+				@echo "\033[38;5;82m[\033[94m+\033[38;5;82m] Creation of \033[34mlibft.a\033[00m"
+				@ar rcs $(NAME) $(OBJS)
 
 clean:
 				rm -f $(OBJS) $(BONUS_OBJS)
