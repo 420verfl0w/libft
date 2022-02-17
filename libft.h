@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 20:08:46 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 21:57:12 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/17 22:15:42 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, t_size n);
 char	*ft_strcpy(char *dest, char *src);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strstr(char *str, char *to_find);
+char	*ft_strcat(char *dest, char *src);
 int		ft_strlen(char *str);
 int		ft_atoi(char *str);
 int		ft_isalpha(int c);
