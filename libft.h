@@ -6,14 +6,12 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 14:53:10 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 17:36:16 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/17 17:50:12 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-# define NULL ((void *)0)
 
 typedef unsigned long	t_size;
 void	*ft_memset(void *s, int c, t_size n);
