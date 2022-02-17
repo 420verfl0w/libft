@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 18:21:59 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 18:25:50 by stales           ###   ########.fr       */
+/*   Created: 2022/02/17 19:23:22 by stales            #+#    #+#             */
+/*   Updated: 2022/02/17 19:23:37 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,12 @@ int		ft_strlen(char *str);
 int		ft_atoi(char *str);
 void	ft_putstr(char const *s);
 void	ft_putchar(char c);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 #endif
