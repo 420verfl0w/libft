@@ -28,7 +28,7 @@ Our Libft
 |ft_strchr|✔️|
 |ft_strdup|✔️|
 |ft_strlcat|❌|
-|ft_strlcpy|❌|
+|ft_strlcpy|✔️|
 |ft_strlen|✔️|
 |ft_strncmp|✔️|
 |ft_strnstr|🚧|
