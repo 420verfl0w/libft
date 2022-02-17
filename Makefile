@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/17 20:08:36 by stales           ###   ########.fr        #
+#    Updated: 2022/02/17 20:13:23 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 
 SRCS			=	ft_memset.c ft_bzero.c ft_memcpy.c ft_putstr.c ft_memccpy.c ft_strlen.c \
 					ft_strcpy.c ft_putchar.c ft_atoi.c ft_isdigit.c ft_isprint.c ft_isascii.c \
-					ft_isalnum.c ft_isalpha.c ft_tolower.c ft_toupper.c ft_strchr.c
+					ft_isalnum.c ft_isalpha.c ft_tolower.c ft_toupper.c ft_strchr.c ft_isblank.c
 OBJS			= $(SRCS:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
 
