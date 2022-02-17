@@ -108,8 +108,8 @@ Our Libft
 |ft_strlowcase|❌|
 |ft_strmap|❌|
 |ft_strncasecmp|❌|
-|ft_strncat|❌|
-|ft_strncpy|❌|
+|ft_strncat|✔️|
+|ft_strncpy|✔️|
 |ft_strndup|❌|
 |ft_strnequ|❌|
 |ft_strnew|❌|
