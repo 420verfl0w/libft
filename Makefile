@@ -6,11 +6,11 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 17:33:48 by stales            #+#    #+#              #
-#    Updated: 2022/02/17 17:33:51 by stales           ###   ########.fr        #
+#    Updated: 2022/02/17 17:43:34 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft
+NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror -I .
 SRC = ft_memset.c \
 		ft_bzero.c \
@@ -24,14 +24,14 @@ all: $(NAME)
 	$(CC) $(CFLAGS) -o $@ -c $<
 
 $(NAME):	$(OBJ)
-	ar rcs $(NAME).a $^
-	ranlib $(NAME).a
+	ar rcs $(NAME) $^
+	ranlib $(NAME)
 
 clean:	$(OBJ)
 	rm $^
 
 fclean:	clean
-	rm $(NAME).a
+	rm $(NAME)
 
 re:	fclean $(NAME)
 
