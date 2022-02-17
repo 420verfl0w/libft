@@ -31,7 +31,7 @@ Our Libft
 |ft_strlcpy|❌|
 |ft_strlen|✔️|
 |ft_strncmp|✔️|
-|ft_strnstr|❌|
+|ft_strnstr|🚧|
 |ft_strrchr|❌|
 |ft_tolower|✔️|
 |ft_toupper|✔️|
