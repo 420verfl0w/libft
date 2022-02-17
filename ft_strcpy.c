@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 13:17:58 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 18:12:20 by stales           ###   ########.fr       */
+/*   Created: 2022/02/17 18:12:39 by stales            #+#    #+#             */
+/*   Updated: 2022/02/17 18:16:48 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, t_size n)
+char	*ft_strcpy(char *dest, char *src)
 {
-	unsigned char	*tmp;
+	char	*tmp;
 
-	tmp = (unsigned char *)s;
-	while (n--)
-		*tmp++ = (unsigned char)c;
-	return (s);
+	tmp = dest;
+	while (*src)
+		*tmp++ = *src++;
+	*tmp = 0;
+	return (dest);
 }
