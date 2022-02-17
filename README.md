@@ -3,6 +3,10 @@ Our Libft
 
 ## TODO LIST
 
+✔️ = fully done
+❌ = not touched
+🚧 = work in progress
+
 ### Part I
 
 |Fonctions|is_done ?|
