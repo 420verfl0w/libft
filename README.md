@@ -26,7 +26,7 @@ Our Libft
 |ft_strlcat|❌|❌|
 |ft_strlcpy|❌|❌|
 |ft_strlen|✔️|✔️|
-|ft_strncmp|❌|❌|
+|ft_strncmp|✔️|✔️|
 |ft_strnstr|❌|❌|
 |ft_strrchr|❌|❌|
 |ft_tolower|✔️|✔️|
@@ -95,7 +95,7 @@ Our Libft
 |ft_strcasestr|❌|❌|
 |ft_strcat|❌|❌|
 |ft_strclr|❌|❌|
-|ft_strcmp|❌|❌|
+|ft_strcmp|✔️|✔️|
 |ft_strcpy|✔️|✔️|
 |ft_strdel|❌|❌|
 |ft_strequ|❌|❌|
@@ -109,6 +109,6 @@ Our Libft
 |ft_strndup|❌|❌|
 |ft_strnequ|❌|❌|
 |ft_strnew|❌|❌|
-|ft_strstr|❌|❌|
+|ft_strstr|✔️|✔️|
 |ft_strtok|❌|❌|
 |ft_strupcase|❌|❌|
