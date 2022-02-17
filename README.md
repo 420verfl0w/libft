@@ -23,7 +23,7 @@ Our Libft
 |ft_memchr|✔️|
 |ft_memcmp|❌|
 |ft_memcpy|✔️|
-|ft_memmove|❌|
+|ft_memmove|✔️|
 |ft_memset|✔️|
 |ft_strchr|✔️|
 |ft_strdup|✔️|
