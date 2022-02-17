@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 19:23:22 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 20:00:16 by stales           ###   ########.fr       */
+/*   Created: 2022/02/17 20:08:46 by stales            #+#    #+#             */
+/*   Updated: 2022/02/17 20:09:46 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+void	ft_isblank(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 void	ft_putstr(char const *s);
