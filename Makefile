@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
+#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/17 23:45:45 by pix              ###   ########.fr        #
+#    Updated: 2022/02/17 23:54:23 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,8 @@ SRCS			=	ft_memset.c \
 					ft_strdup.c \
 					ft_memmove.c \
 					ft_strncat.c \
-					ft_strnstr.c
+					ft_strnstr.c \
+					ft_calloc.c
 OBJS			= $(SRCS:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
 
