@@ -15,13 +15,13 @@ Our Libft
 |ft_isascii|✔️|✔️|
 |ft_isdigit|✔️|✔️|
 |ft_isprint|✔️|✔️|
-|ft_memccpy|❌|❌|
+|ft_memccpy|✔️|✔️|
 |ft_memchr|❌|❌|
 |ft_memcmp|❌|❌|
 |ft_memcpy|✔️|✔️|
 |ft_memmove|❌|❌|
 |ft_memset|✔️|✔️|
-|ft_strchr|❌|❌|
+|ft_strchr|✔️|✔️|
 |ft_strdup|❌|❌|
 |ft_strlcat|❌|❌|
 |ft_strlcpy|❌|❌|
