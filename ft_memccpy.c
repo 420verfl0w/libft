@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 15:11:10 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 17:51:06 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/17 17:55:49 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memccpy(void *dest, const void *src, int c, t_size n)
 {
-	char *tdst;
-	char *tsrc;
+	char	*tdst;
+	char	*tsrc;
 
 	tsrc = (char *)src;
 	tdst = (char *)dest;
