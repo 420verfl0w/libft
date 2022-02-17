@@ -27,7 +27,7 @@ Our Libft
 |ft_memset|✔️|
 |ft_strchr|✔️|
 |ft_strdup|✔️|
-|ft_strlcat|❌|
+|ft_strlcat|✔️|
 |ft_strlcpy|✔️|
 |ft_strlen|✔️|
 |ft_strncmp|✔️|
