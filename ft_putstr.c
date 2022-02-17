@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 14:37:57 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 14:52:05 by stales           ###   ########.fr       */
+/*   Created: 2022/02/17 14:41:41 by stales            #+#    #+#             */
+/*   Updated: 2022/02/17 17:08:16 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-int main(void)
+void	ft_putstr(char const *s)
 {
-	char	hel[0x100];
+	char	*tmp;
 
-	ft_memcpy(hel, "hello", 5);
-	ft_putstr(hel);
-	ft_putstr("\n");
-	ft_memset(hel, 's', 1);
-	ft_putstr(hel);
-	ft_bzero(hel, 1);
-	ft_putstr(hel);
-
-	return (0);
+	tmp = (char *)s;
+	while (*tmp)
+		tmp++;
+	write(1, s, tmp - s);
 }

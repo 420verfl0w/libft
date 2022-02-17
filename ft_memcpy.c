@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 14:41:41 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 14:57:24 by stales           ###   ########.fr       */
+/*   Created: 2022/02/17 14:32:38 by stales            #+#    #+#             */
+/*   Updated: 2022/02/17 17:11:15 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
-void	ft_putstr(char const *s)
+void	*ft_memcpy(void *dest, const void *src, t_size n)
 {
-	char	*tmp;
+	unsigned char	*tdst;
+	unsigned char	*tsrc;
 
-	tmp = (char *)s;
-	while (*tmp)
-		tmp++;
-	write(1, s, tmp - s);
+	tsrc = (unsigned char *)src;
+	tdst = (unsigned char *)dest;
+	while (n--)
+		*tdst++ = *tsrc++;
+	return (dest);
 }
