@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 14:53:10 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 18:17:44 by stales           ###   ########.fr       */
+/*   Created: 2022/02/17 18:17:07 by stales            #+#    #+#             */
+/*   Updated: 2022/02/17 18:20:26 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
+#include <unistd.h>
 
-typedef unsigned long	t_size;
-void	*ft_memset(void *s, int c, t_size n);
-void	ft_bzero(void *s, t_size n);
-void	*ft_memcpy(void *dest, const void *src, t_size n);
-void	*ft_memccpy(void *dest, const void *src, int c, t_size n);
-char	*ft_strcpy(char *dest, char *src);
-int		ft_strlen(char *str);
-void	ft_putstr(char const *s);
-void	ft_putchar(char c);
-
-#endif
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
