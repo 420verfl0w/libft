@@ -77,7 +77,7 @@ Our Libft
 |:-------:|:-------:|
 |ft_isblank|✔️|
 |ft_iscntrl|✔️|
-|ft_isgraph|❌|
+|ft_isgraph|✔️|
 |ft_islower|❌|
 |ft_isspace|❌|
 |ft_isupper|❌|

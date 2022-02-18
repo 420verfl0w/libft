@@ -6,7 +6,7 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:43:54 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 02:35:43 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 02:47:50 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int			ft_isascii(int c);
 int			ft_isblank(int c);
 int			ft_iscntrl(int c);
 int			ft_isdigit(int c);
+int			ft_isgraph(int c);
 int			ft_isprint(int c);
 int			ft_memcmp(const void *s1, const void *s2, t_size n);
 int			ft_strcmp(char *s1, char *s2);
