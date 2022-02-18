@@ -98,7 +98,7 @@ Our Libft
 |ft_strcasecmp|❌|❌|
 |ft_strcasestr|❌|❌|
 |ft_strcat|✔️|❌|
-|ft_strclr|❌|❌|
+|ft_strclr|✔️|❌|
 |ft_strcmp|✔️|❌|
 |ft_strcpy|✔️|❌|
 |ft_strdel|❌|❌|
