@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 09:35:57 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 12:57:18 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/18 13:52:21 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,6 @@ void		ft_putchar_fd(char c, int fd);
 void		ft_swap(int *a, int *b);
 void		ft_memdel(void **ap);
 void		ft_putstr_fd(char const *s, int fd);
+void		ft_putendl_fd(char const *s, int fd);
 
 #endif
