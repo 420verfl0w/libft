@@ -6,9 +6,24 @@
 #    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/18 00:37:50 by pix              ###   ########.fr        #
+#    Updated: 2022/02/18 01:08:22 by pix              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+# **************************************************************************** #
+#  Bash Color
+
+green			= \033[38;5;82m
+blue			= \033[38;5;75m
+yellow			= \033[38;5;226m
+
+blinking		= \033[5m
+reset			= \033[0m
+
+# **************************************************************************** #
+
+# **************************************************************************** #
+# config
 
 SRCS			=	ft_memset.c \
 					ft_bzero.c \
@@ -47,18 +62,23 @@ CFLAGS			= -Wall -Wextra -Werror -I.
 
 NAME			= libft.a
 
+# **************************************************************************** #
+
+# **************************************************************************** #
+# Building rules
+
 all:			$(NAME)
 
 %.o: %.c
-	@printf "\033[38;5;82m[\033[94m+\033[38;5;82m] Creation of the object \033[38;5;226m$< \033[32;5;85m -> \033[38;5;226m $@ \033[00m\n"
+	@printf "$(green)[$(blue)+$(green)] Creation of the object $(yellow)$< $(blinking)$(green) -> $(reset)$(yellow) $@ $(reset)\n"
 	@$(CC) $(CFLAGS) -o $@ -c $<
 
 $(NAME):		$(OBJS)
-				@printf "\033[38;5;82m[\033[94m+\033[38;5;82m] Creation of \033[34mlibft.a\033[00m\n"
+				@printf "$(green)[$(blue)+$(green)] Creation of $(blue)libft.a$(reset)\n"
 				@ar rcs $(NAME) $(OBJS)
 
 clean:
-				rm -f $(OBJS) $(BONUS_OBJS)
+				$(RM) *.o
 
 fclean:			clean
 				$(RM) $(NAME)
@@ -69,3 +89,5 @@ bonus:			$(OBJS) $(BONUS_OBJS)
 				ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 .PHONY:			all clean fclean re
+
+# **************************************************************************** #
