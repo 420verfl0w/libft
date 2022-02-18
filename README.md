@@ -89,11 +89,11 @@ Our Libft
 |ft_putendl|❌|❌|
 |ft_putnbr|✔️|❌|
 |ft_putstr|✔️|❌|
-|ft_str_is_alpha|❌|❌|
-|ft_str_is_lowercase|❌|❌|
-|ft_str_is_numeric|❌|❌|
-|ft_str_is_printable|❌|❌|
-|ft_str_is_uppercase|❌|❌|
+|ft_str_is_alpha|✔️|✔️|
+|ft_str_is_lowercase|✔️|✔️|
+|ft_str_is_numeric|✔️|✔️|
+|ft_str_is_printable|✔️|✔️|
+|ft_str_is_uppercase|✔️|✔️|
 |ft_strcapitalize|❌|❌|
 |ft_strcasecmp|❌|❌|
 |ft_strcasestr|❌|❌|

@@ -6,7 +6,7 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:43:54 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 03:29:35 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 03:56:49 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,11 @@ int			ft_isspace(int c);
 int			ft_isupper(int c);
 int			ft_isxdigit(int c);
 int			ft_memcmp(const void *s1, const void *s2, t_size n);
+int			ft_str_is_alpha(char *s);
+int			ft_str_is_lowercase(char *s);
+int			ft_str_is_numeric(char *s);
+int			ft_str_is_printable(char *s);
+int			ft_str_is_uppercase(char *s);
 int			ft_strcmp(char *s1, char *s2);
 int			ft_strlen(char *str);
 int			ft_strncmp(char *s1, char *s2, t_size n);

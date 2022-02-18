@@ -6,7 +6,7 @@
 #    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/18 03:29:46 by pix              ###   ########.fr        #
+#    Updated: 2022/02/18 03:57:04 by pix              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,11 @@ SRCS			=	ft_atoi.c \
 					ft_putchar.c \
 					ft_putnbr.c \
 					ft_putstr.c \
+					ft_str_is_alpha.c \
+					ft_str_is_lowercase.c \
+					ft_str_is_numeric.c \
+					ft_str_is_printable.c \
+					ft_str_is_uppercase.c \
 					ft_strcat.c \
 					ft_strchr.c \
 					ft_strcmp.c \
