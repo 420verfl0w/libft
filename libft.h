@@ -6,7 +6,7 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:43:54 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 03:56:49 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 04:08:44 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ char		*ft_strcat(char *dest, char *src);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strcpy(char *dest, char *src);
 char		*ft_strdup(char *src);
+char		*ft_strlowcase(char *str);
 char		*ft_strncat(char *dest, char *src, t_size n);
 char		*ft_strncpy(char *dest, char *src, t_size n);
 char		*ft_strnstr(char *str, char *to_find, int n);

@@ -105,7 +105,7 @@ Our Libft
 |ft_strequ|❌|❌|
 |ft_striter|❌|❌|
 |ft_striteri|❌|❌|
-|ft_strlowcase|❌|❌|
+|ft_strlowcase|✔️|✔️|
 |ft_strmap|❌|❌|
 |ft_strncasecmp|❌|❌|
 |ft_strncat|✔️|❌|
