@@ -32,7 +32,7 @@ Our Libft
 |ft_strlen|✔️|
 |ft_strncmp|✔️|
 |ft_strnstr|✔️|
-|ft_strrchr|❌|
+|ft_strrchr|✔️|
 |ft_tolower|✔️|
 |ft_toupper|✔️|
 
@@ -97,7 +97,7 @@ Our Libft
 |ft_strcapitalize|❌|
 |ft_strcasecmp|❌|
 |ft_strcasestr|❌|
-|ft_strcat|❌|
+|ft_strcat|✔️|
 |ft_strclr|❌|
 |ft_strcmp|✔️|
 |ft_strcpy|✔️|
