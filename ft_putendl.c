@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 22:21:15 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 15:01:59 by stales           ###   ########.fr       */
+/*   Created: 2022/02/18 15:03:35 by stales            #+#    #+#             */
+/*   Updated: 2022/02/18 15:04:49 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncpy(char *dest, char *src, t_size n)
+void	ft_putendl(char const *s)
 {
-	char	*tmp;
-
-	tmp = dest;
-	n++;
-	while (--n && *src)
-		*tmp++ = *src++;
-	while (n--)
-		*tmp++ = 0;
-	return (dest);
+	ft_putstr(s);
+	ft_putchar('\n');
 }

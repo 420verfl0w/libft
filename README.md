@@ -86,7 +86,7 @@ Our Libft
 |ft_memalloc|✔️|✔️|
 |ft_memdel|✔️|✔️|
 |ft_putchar|✔️|❌|
-|ft_putendl|❌|❌|
+|ft_putendl|✔️|❌|
 |ft_putnbr|✔️|❌|
 |ft_putstr|✔️|❌|
 |ft_str_is_alpha|✔️|✔️|
