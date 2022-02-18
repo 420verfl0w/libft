@@ -6,7 +6,7 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:43:54 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 01:45:48 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 02:26:14 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,6 @@ int			ft_memcmp(const void *s1, const void *s2, t_size n);
 void		ft_putstr(char const *s);
 void		ft_putchar(char c);
 void		ft_bzero(void *s, t_size n);
+void		ft_putnbr(int nb);
 
 #endif
