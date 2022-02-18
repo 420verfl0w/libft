@@ -6,7 +6,7 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 21:54:11 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 23:36:23 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 01:19:55 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,13 @@
 char	*ft_strnstr(char *str, char *to_find, int n)
 {
 	char	*tmp;
+	char	*ttmp;
 	char	*sstr;
 
 	if (!*to_find)
 		return (str);
-	while (str && to_find && *str && n--)
+	ttmp = str;
+	while (str && to_find && *str && (str - ttmp) < n--)
 	{
 		if (*str == *to_find)
 		{
