@@ -83,7 +83,7 @@ Our Libft
 |ft_isupper|✔️|✔️|
 |ft_isxdigit|✔️|✔️|
 |ft_itoa_base|❌|❌|
-|ft_memalloc|❌|❌|
+|ft_memalloc|✔️|✔️|
 |ft_memdel|❌|❌|
 |ft_putchar|✔️|❌|
 |ft_putendl|❌|❌|
