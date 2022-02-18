@@ -76,7 +76,7 @@ Our Libft
 |Fonctions|is_done ?|
 |:-------:|:-------:|
 |ft_isblank|✔️|
-|ft_iscntrl|❌|
+|ft_iscntrl|✔️|
 |ft_isgraph|❌|
 |ft_islower|❌|
 |ft_isspace|❌|
@@ -87,7 +87,7 @@ Our Libft
 |ft_memdel|❌|
 |ft_putchar|✔️|
 |ft_putendl|❌|
-|ft_putnbr|❌|
+|ft_putnbr|✔️|
 |ft_putstr|✔️|
 |ft_str_is_alpha|❌|
 |ft_str_is_lowercase|❌|

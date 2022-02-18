@@ -6,7 +6,7 @@
 #    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/18 02:29:14 by pix              ###   ########.fr        #
+#    Updated: 2022/02/18 02:44:48 by pix              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRCS			=	ft_atoi.c \
 					ft_isalpha.c \
 					ft_isascii.c \
 					ft_isblank.c \
+					ft_iscntrl.c \
 					ft_isdigit.c \
 					ft_isprint.c \
 					ft_memccpy.c \
