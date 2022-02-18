@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:43:54 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 00:33:34 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/18 01:45:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void		*ft_calloc(t_size nmemb, t_size size);
 char		*ft_strcpy(char *dest, char *src);
 char		*ft_strncpy(char *dest, char *src, t_size n);
 char		*ft_strchr(const char *s, int c);
+char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(char *str, char *to_find);
 char		*ft_strcat(char *dest, char *src);
 char		*ft_strncat(char *dest, char *src, t_size n);
