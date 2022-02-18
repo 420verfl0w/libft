@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 09:35:57 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 11:12:40 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/18 11:30:34 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ int			ft_strncmp(char *s1, char *s2, t_size n);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 int			ft_rev_int(int nb);
+int			ft_cdigit(int nb);
 void		ft_bzero(void *s, t_size n);
 void		ft_putchar(char c);
 void		ft_putnbr(int nb);

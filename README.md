@@ -118,3 +118,4 @@ Our Libft
 |ft_strupcase|✔️|✔️|
 |ft_swap     |✔️|❌|
 |ft_rev_int  |✔️|❌|
+|ft_cdigit   |✔️|❌|
