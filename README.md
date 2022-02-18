@@ -3,9 +3,9 @@ Our Libft
 
 ## TODO LIST
 
-✔️ = fully done
-❌ = not touched
-🚧 = work in progress
+✔️ = fully done<br>
+❌ = not touched<br>
+🚧 = work in progress<br>
 
 ### Part I
 
