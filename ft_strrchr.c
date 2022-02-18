@@ -1,22 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 18:31:21 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:16:53 by pix              ###   ########.fr       */
+/*   Created: 2022/02/18 01:31:25 by pix               #+#    #+#             */
+/*   Updated: 2022/02/18 02:18:44 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- * checks if c is a digit (0 through 9).
- */
-
-int	ft_isdigit(int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	return (c >= '0' && c <= '9');
+	char	*tmp;
+	char	*last_occur;
+
+	tmp = (char *)s;
+	last_occur = 0;
+	if (!c)
+	{
+		while (*tmp)
+			tmp++;
+		return (tmp);
+	}
+	while (*tmp)
+	{
+		if (*tmp == (char)c)
+			last_occur = tmp;
+		tmp++;
+	}
+	return (last_occur);
 }

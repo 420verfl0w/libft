@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isgraph.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 18:31:21 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:16:53 by pix              ###   ########.fr       */
+/*   Created: 2022/02/17 18:47:57 by pix               #+#    #+#             */
+/*   Updated: 2022/02/18 03:15:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks if c is a digit (0 through 9).
+ * checks if c is any printable character except space.
  */
 
-int	ft_isdigit(int c)
+int	ft_isgraph(int c)
 {
-	return (c >= '0' && c <= '9');
+	return (c > ' ' && c < 0x7F);
 }

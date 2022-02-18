@@ -1,22 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 18:31:21 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:16:53 by pix              ###   ########.fr       */
+/*   Created: 2022/02/18 02:22:54 by pix               #+#    #+#             */
+/*   Updated: 2022/02/18 02:25:26 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-/*
- * checks if c is a digit (0 through 9).
- */
-
-int	ft_isdigit(int c)
+void	ft_putnbr(int nb)
 {
-	return (c >= '0' && c <= '9');
+	if (nb == -2147483648)
+	{
+		ft_putstr("-2147483648");
+	}
+	else
+	{
+		if (nb < 0)
+		{
+			ft_putchar('-');
+			nb = -nb;
+		}
+		if (nb > 9)
+		{
+			ft_putnbr(nb / 10);
+			nb = nb % 10;
+		}
+		if (nb < 10)
+			ft_putchar('0' + nb);
+	}
 }

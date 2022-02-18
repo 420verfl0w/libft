@@ -1,22 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 18:31:21 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:16:53 by pix              ###   ########.fr       */
+/*   Created: 2022/02/18 03:59:45 by pix               #+#    #+#             */
+/*   Updated: 2022/02/18 04:17:15 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks if c is a digit (0 through 9).
+ * lowercase all occurence of uppcase in str
  */
 
-int	ft_isdigit(int c)
+char	*ft_strlowcase(char *str)
 {
-	return (c >= '0' && c <= '9');
+	char	*tmp;
+
+	tmp = str;
+	while (*str)
+	{
+		if (*str >= 'A' && *str <= 'Z')
+			*str ^= 32;
+		str++;
+	}
+	return (tmp);
 }

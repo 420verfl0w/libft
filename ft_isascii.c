@@ -6,11 +6,15 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:43:03 by pix               #+#    #+#             */
-/*   Updated: 2022/02/17 19:40:49 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 03:15:04 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * checks if c fit in the ascii table.
+ */
 
 int	ft_isascii(int c)
 {

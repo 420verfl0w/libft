@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_iscntrl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 18:31:21 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:16:53 by pix              ###   ########.fr       */
+/*   Created: 2022/02/18 02:31:28 by pix               #+#    #+#             */
+/*   Updated: 2022/02/18 03:15:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks if c is a digit (0 through 9).
+ * checks if c is a control character.
  */
 
-int	ft_isdigit(int c)
+int	ft_iscntrl(int c)
 {
-	return (c >= '0' && c <= '9');
+	return ((c >= '\0' && c <= 0x1F) || c == 0x7F);
 }

@@ -6,11 +6,15 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:31:21 by pix               #+#    #+#             */
-/*   Updated: 2022/02/17 19:37:19 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 03:15:47 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * checks if c is an alphabetic character.
+ */
 
 int	ft_isalpha(int c)
 {
