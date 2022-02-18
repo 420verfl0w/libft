@@ -10,7 +10,7 @@ Our Libft
 ### Part I
 
 |Fonctions|is_done ?|is_documented ?|
-|:-------:|:-------:|:-------------:|
+|:--------|:-------:|:-------------:|
 |ft_atoi|✔️|✔️|
 |ft_bzero|✔️|❌|
 |ft_calloc|✔️|❌|
@@ -41,7 +41,7 @@ Our Libft
 ### Part II
 
 |Fonctions|is_done ?|is_documented ?|
-|:-------:|:-------:|:-------------:|
+|:--------|:-------:|:-------------:|
 |ft_itoa|❌|❌|
 |ft_putchar_fd|❌|❌|
 |ft_putendl_fd|❌|❌|
@@ -58,7 +58,7 @@ Our Libft
 ### Bonus part
 
 |Fonctions|is_done ?|is_documented ?|
-|:-------:|:-------:|:-------------:|
+|:--------|:-------:|:-------------:|
 |ft_lstadd_back|❌|❌|
 |ft_lstadd_front|❌|❌|
 |ft_lstclear|❌|❌|
@@ -74,7 +74,7 @@ Our Libft
 ### Addtional part
 
 |Fonctions|is_done ?|is_documented ?|
-|:-------:|:-------:|:-------------:|
+|:--------|:-------:|:-------------:|
 |ft_isblank|✔️|❌|
 |ft_iscntrl|✔️|❌|
 |ft_isgraph|✔️|❌|
