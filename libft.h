@@ -6,7 +6,7 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:43:54 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 04:08:44 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 04:19:03 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ char		*ft_strncpy(char *dest, char *src, t_size n);
 char		*ft_strnstr(char *str, char *to_find, int n);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(char *str, char *to_find);
+char		*ft_strupcase(char *str);
 t_uint32	ft_strlcat(char *dest, char *src, t_size size);
 t_uint32	ft_strlcpy(char *dest, char *src, t_size size);
 int			ft_atoi(char *str);

@@ -115,4 +115,4 @@ Our Libft
 |ft_strnew|❌|❌|
 |ft_strstr|✔️|❌|
 |ft_strtok|❌|❌|
-|ft_strupcase|❌|❌|
+|ft_strupcase|✔️|✔️|

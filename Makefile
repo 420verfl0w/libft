@@ -6,7 +6,7 @@
 #    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/18 04:15:45 by pix              ###   ########.fr        #
+#    Updated: 2022/02/18 04:18:13 by pix              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,6 +69,7 @@ SRCS			=	ft_atoi.c \
 					ft_strnstr.c \
 					ft_strrchr.c \
 					ft_strstr.c \
+					ft_strupcase.c \
 					ft_tolower.c \
 					ft_toupper.c
 OBJS			= $(SRCS:.c=.o)
