@@ -6,11 +6,15 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 02:31:28 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 02:43:37 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 03:15:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * checks if c is a control character.
+ */
 
 int	ft_iscntrl(int c)
 {

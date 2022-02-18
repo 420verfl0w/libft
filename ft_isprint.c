@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:47:57 by pix               #+#    #+#             */
-/*   Updated: 2022/02/17 19:36:02 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/18 03:15:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * checks if c is any printable character including space.
+ */
 
 int	ft_isprint(int c)
 {

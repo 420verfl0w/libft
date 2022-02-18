@@ -6,14 +6,14 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 03:01:23 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:05:59 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 03:15:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks for an lowercase letter
+ * checks if c is an lowercase letter
  */
 
 int	ft_islower(int c)

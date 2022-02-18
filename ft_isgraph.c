@@ -6,11 +6,15 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:47:57 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 02:47:12 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 03:15:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+ * checks if c is any printable character except space.
+ */
 
 int	ft_isgraph(int c)
 {

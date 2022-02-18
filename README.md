@@ -14,11 +14,11 @@ Our Libft
 |ft_atoi|✔️|✔️|
 |ft_bzero|✔️|❌|
 |ft_calloc|✔️|❌|
-|ft_isalnum|✔️|❌|
-|ft_isalpha|✔️|❌|
-|ft_isascii|✔️|❌|
-|ft_isdigit|✔️|❌|
-|ft_isprint|✔️|❌|
+|ft_isalnum|✔️|✔️|
+|ft_isalpha|✔️|✔️|
+|ft_isascii|✔️|✔️|
+|ft_isdigit|✔️|✔️|
+|ft_isprint|✔️|✔️|
 |ft_memccpy|✔️|❌|
 |ft_memchr|✔️|❌|
 |ft_memcmp|✔️|❌|
@@ -75,9 +75,9 @@ Our Libft
 
 |Fonctions|is_done ?|is_documented ?|
 |:--------|:-------:|:-------------:|
-|ft_isblank|✔️|❌|
-|ft_iscntrl|✔️|❌|
-|ft_isgraph|✔️|❌|
+|ft_isblank|✔️|✔️|
+|ft_iscntrl|✔️|✔️|
+|ft_isgraph|✔️|✔️|
 |ft_islower|✔️|✔️|
 |ft_isspace|❌|❌|
 |ft_isupper|✔️|✔️|

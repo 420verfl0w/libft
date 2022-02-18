@@ -6,14 +6,14 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 03:01:23 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:05:57 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 03:15:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks for an uppercase letter
+ * checks if c is an uppercase letter
  */
 
 int	ft_isupper(int c)
