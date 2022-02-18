@@ -6,7 +6,7 @@
 #    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/18 02:48:04 by pix              ###   ########.fr        #
+#    Updated: 2022/02/18 03:06:16 by pix              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,9 @@ SRCS			=	ft_atoi.c \
 					ft_iscntrl.c \
 					ft_isdigit.c \
 					ft_isgraph.c \
+					ft_islower.c \
 					ft_isprint.c \
+					ft_isupper.c \
 					ft_memccpy.c \
 					ft_memchr.c \
 					ft_memcmp.c \
@@ -60,7 +62,7 @@ SRCS			=	ft_atoi.c \
 					ft_strrchr.c \
 					ft_strstr.c \
 					ft_tolower.c \
-					ft_toupper.c
+					ft_toupper.c \
 OBJS			= $(SRCS:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
 

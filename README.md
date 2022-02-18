@@ -78,9 +78,9 @@ Our Libft
 |ft_isblank|✔️|❌|
 |ft_iscntrl|✔️|❌|
 |ft_isgraph|✔️|❌|
-|ft_islower|❌|❌|
+|ft_islower|✔️|✔️|
 |ft_isspace|❌|❌|
-|ft_isupper|❌|❌|
+|ft_isupper|✔️|✔️|
 |ft_isxdigit|❌|❌|
 |ft_itoa_base|❌|❌|
 |ft_memalloc|❌|❌|
