@@ -79,7 +79,7 @@ Our Libft
 |ft_iscntrl|✔️|✔️|
 |ft_isgraph|✔️|✔️|
 |ft_islower|✔️|✔️|
-|ft_isspace|❌|❌|
+|ft_isspace|✔️|✔️|
 |ft_isupper|✔️|✔️|
 |ft_isxdigit|❌|❌|
 |ft_itoa_base|❌|❌|

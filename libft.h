@@ -6,7 +6,7 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:43:54 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 03:06:25 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/18 03:23:12 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ int			ft_isdigit(int c);
 int			ft_isgraph(int c);
 int			ft_islower(int c);
 int			ft_isprint(int c);
+int			ft_isspace(int c);
 int			ft_isupper(int c);
 int			ft_memcmp(const void *s1, const void *s2, t_size n);
 int			ft_strcmp(char *s1, char *s2);
