@@ -43,7 +43,7 @@ Our Libft
 |Fonctions|is_done ?|is_documented ?|
 |:--------|:-------:|:-------------:|
 |ft_itoa|❌|❌|
-|ft_putchar_fd|❌|❌|
+|ft_putchar_fd|✔️|❌|
 |ft_putendl_fd|❌|❌|
 |ft_putnbr_fd|❌|❌|
 |ft_putstr_fd|❌|❌|
