@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 09:35:57 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 13:59:35 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/18 14:48:56 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char		*ft_strnstr(char *str, char *to_find, int n);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(char *str, char *to_find);
 char		*ft_strupcase(char *str);
+char		*ft_strrev(char *str);
 t_uint32	ft_strlcat(char *dest, char *src, t_size size);
 t_uint32	ft_strlcpy(char *dest, char *src, t_size size);
 int			ft_atoi(char *str);

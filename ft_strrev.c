@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/18 00:00:23 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 14:00:49 by stales           ###   ########.fr       */
+/*   Created: 2022/02/18 14:45:02 by stales            #+#    #+#             */
+/*   Updated: 2022/02/18 14:48:23 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, t_size n)
+char	*ft_strrev(char *str)
 {
-	t_uint8	*ts1;
-	t_uint8	*ts2;
+	int	i;
+	int	x;
 
-	if (!n)
-		return (0);
-	ts1 = (t_uint8 *)s1;
-	ts2 = (t_uint8 *)s2;
-	while (*ts1 && *ts2 && --n && *ts1++ == *ts2)
-		ts2++;
-	return (*ts1 - *ts2);
+	i = 0;
+	x = ft_strlen(str) - 1;
+	while (i < x)
+	{
+		str[i] ^= str[x];
+		str[x] ^= str[i];
+		str[i++] ^= str[x--];
+	}
+	return (str);
 }
