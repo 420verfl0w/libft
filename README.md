@@ -81,7 +81,7 @@ Our Libft
 |ft_islower|✔️|✔️|
 |ft_isspace|✔️|✔️|
 |ft_isupper|✔️|✔️|
-|ft_isxdigit|❌|❌|
+|ft_isxdigit|✔️|✔️|
 |ft_itoa_base|❌|❌|
 |ft_memalloc|❌|❌|
 |ft_memdel|❌|❌|

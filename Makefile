@@ -6,7 +6,7 @@
 #    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:22:12 by stales            #+#    #+#              #
-#    Updated: 2022/02/18 03:23:57 by pix              ###   ########.fr        #
+#    Updated: 2022/02/18 03:29:46 by pix              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ SRCS			=	ft_atoi.c \
 					ft_isprint.c \
 					ft_isspace.c \
 					ft_isupper.c \
+					ft_isxdigit.c \
 					ft_memccpy.c \
 					ft_memchr.c \
 					ft_memcmp.c \
