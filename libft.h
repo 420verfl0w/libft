@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 09:35:57 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 17:35:44 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/19 15:46:28 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char		*ft_strdup(char *src);
 char		*ft_strlowcase(char *str);
 char		*ft_strncat(char *dest, char *src, t_size n);
 char		*ft_strncpy(char *dest, char *src, t_size n);
+char		*ft_strndup(char *src, int n);
 char		*ft_strnstr(char *str, char *to_find, int n);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(char *str, char *to_find);

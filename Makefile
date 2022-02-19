@@ -6,7 +6,7 @@
 #    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/18 09:35:26 by stales            #+#    #+#              #
-#    Updated: 2022/02/19 13:07:22 by pix              ###   ########.fr        #
+#    Updated: 2022/02/19 15:45:43 by pix              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,6 +83,7 @@ SRCS			=	ft_atoi.c \
 					ft_putendl_fd.c \
 					ft_strrev.c \
 					ft_putendl.c \
+					ft_strndup.c \
 					ft_itoa.c
 OBJS			= $(SRCS:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.

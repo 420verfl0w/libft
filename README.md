@@ -222,7 +222,7 @@ Our Libft
 |ft_strncasecmp		|❌       |❌             |
 |ft_strncat			|✔️       |❌             |
 |ft_strncpy			|✔️       |❌             |
-|ft_strndup			|❌       |❌             |
+|ft_strndup			|✔️       |❌             |
 |ft_strnequ			|❌       |❌             |
 |ft_strnew			|❌       |❌             |
 |ft_strstr			|✔️       |❌             |
