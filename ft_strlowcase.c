@@ -6,14 +6,18 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 03:59:45 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 04:17:15 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/19 14:02:28 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * lowercase all occurence of uppcase in str
+ *	Desc:	lowercase all occurence of uppercase in a string
+ *
+ *	*str:	string value to convert
+ *
+ *	Return:	return converted value or NULL if error
  */
 
 char	*ft_strlowcase(char *str)

@@ -6,15 +6,18 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 19:49:48 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:16:06 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/19 13:48:04 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks if c is a blank character;
- * that is, a space or a tab.
+ *	Desc:	checks if c is a blank character; that is, a space or a tab.
+ *
+ *	c:		character value to check
+ *
+ *	Return:	nonzero if character is a blank character and zero if not
  */
 
 int	ft_isblank(int c)

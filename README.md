@@ -124,8 +124,8 @@ Our Libft
 |Fonctions			|is_done ?|is_documented ?|
 |:------------------|:-------:|:-------------:|
 |ft_atoi			|✔️       |✔️             |
-|ft_bzero			|✔️       |❌             |
-|ft_calloc			|✔️       |❌             |
+|ft_bzero			|✔️       |✔️             |
+|ft_calloc			|✔️       |✔️             |
 |ft_isalnum			|✔️       |✔️             |
 |ft_isalpha			|✔️       |✔️             |
 |ft_isascii			|✔️       |✔️             |
