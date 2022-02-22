@@ -5,15 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 18:47:57 by pix               #+#    #+#             */
-/*   Updated: 2022/02/19 11:03:08 by stales           ###   ########.fr       */
+/*   Created: 2022/02/22 13:17:11 by stales            #+#    #+#             */
+/*   Updated: 2022/02/22 13:17:58 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks if c is any printable character except space.
+ *	Desc:	checks if c is any printable character except space.
+ *
+ *	c:		character value to check
+ *
+ *	Return:	nonzero if character is any printable character except space and
+ *			zero if not
  */
 
 int	ft_isgraph(int c)

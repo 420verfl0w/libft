@@ -6,14 +6,18 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 03:42:19 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:48:31 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/19 13:57:51 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks if s is an alphabetic strings.
+ *	Desc:	checks if s is an alphabetic string
+ *
+ *	*s:		string value to check
+ *
+ *	Return:	nonzero if s is an alphabetic string and zero if not
  */
 
 int	ft_str_is_alpha(char *s)

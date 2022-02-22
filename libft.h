@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/18 09:35:57 by stales            #+#    #+#             */
-/*   Updated: 2022/02/21 21:26:02 by stales           ###   ########.fr       */
+/*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
+/*   Updated: 2022/02/22 13:16:37 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char		*ft_strdup(char *src);
 char		*ft_strlowcase(char *str);
 char		*ft_strncat(char *dest, char *src, t_size n);
 char		*ft_strncpy(char *dest, char *src, t_size n);
+char		*ft_strndup(char *src, int n);
 char		*ft_strnstr(char *str, char *to_find, int n);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(char *str, char *to_find);

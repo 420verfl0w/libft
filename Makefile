@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
+#    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/18 09:35:26 by stales            #+#    #+#              #
-#    Updated: 2022/02/18 17:36:10 by stales           ###   ########.fr        #
+#    Updated: 2022/02/19 15:45:43 by pix              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@
 
 green			= \033[38;5;82m
 blue			= \033[38;5;75m
+red				= \033[38;5;196m
 yellow			= \033[38;5;226m
 
 blinking		= \033[5m
@@ -82,6 +83,7 @@ SRCS			=	ft_atoi.c \
 					ft_putendl_fd.c \
 					ft_strrev.c \
 					ft_putendl.c \
+					ft_strndup.c \
 					ft_itoa.c
 OBJS			= $(SRCS:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
@@ -104,9 +106,11 @@ $(NAME):		$(OBJS)
 				@ar rcs $(NAME) $(OBJS)
 
 clean:
+				@printf "$(green)[$(red)-$(green)] Deleting object files$(reset)\n"
 				$(RM) *.o
 
 fclean:			clean
+				@printf "$(green)[$(red)-$(green)] Deleting $(yellow)$(NAME)$(reset)\n"
 				$(RM) $(NAME)
 
 re:				fclean $(NAME)

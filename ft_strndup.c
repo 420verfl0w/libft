@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iscntrl.c                                       :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/18 02:31:28 by pix               #+#    #+#             */
-/*   Updated: 2022/02/19 13:48:35 by pix              ###   ########.fr       */
+/*   Created: 2022/02/19 15:34:38 by pix               #+#    #+#             */
+/*   Updated: 2022/02/19 15:43:39 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-/*
- *	Desc:	checks if c is a control character.
- *
- *	c:		character value to check
- *
- *	Return:	nonzero if character is a control character and zero if not
- */
-
-int	ft_iscntrl(int c)
+char	*ft_strndup(char *src, int n)
 {
-	return ((c >= '\0' && c <= 0x1F) || c == 0x7F);
+	char	*tmp;
+	char	*ptr;
+
+	tmp = src;
+	while (*tmp)
+		tmp++;
+	ptr = (char *)malloc(tmp - src);
+	tmp = ptr;
+	while (n-- && *src && tmp)
+		*tmp++ = *src++;
+	return (ptr);
 }

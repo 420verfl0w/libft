@@ -6,14 +6,18 @@
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 03:49:52 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 03:56:01 by pix              ###   ########.fr       */
+/*   Updated: 2022/02/19 13:57:30 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
- * checks if s is an numeric strings.
+ *	Desc:	checks if s is an numeric string.
+ *
+ *	*s:		string value to check
+ *
+ *	Return:	nonzero if s is an numeric string and zero if not
  */
 
 int	ft_str_is_numeric(char *s)
