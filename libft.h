@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/02/22 13:16:37 by stales           ###   ########.fr       */
+/*   Updated: 2022/02/26 15:13:45 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(char *str, char *to_find);
 char		*ft_strupcase(char *str);
 char		*ft_strrev(char *str);
-char		*ft_itoa(int n);
+char		*ft_itoa(long nb);
 t_uint32	ft_strlcat(char *dest, char *src, t_size size);
 t_uint32	ft_strlcpy(char *dest, char *src, t_size size);
 int			ft_atoi(char *str);
@@ -54,6 +54,7 @@ int			ft_isspace(int c);
 int			ft_isupper(int c);
 int			ft_isxdigit(int c);
 int			ft_memcmp(const void *s1, const void *s2, t_size n);
+int			ft_nbrlen(long int nb);
 int			ft_str_is_alpha(char *s);
 int			ft_str_is_lowercase(char *s);
 int			ft_str_is_numeric(char *s);

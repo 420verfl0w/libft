@@ -1,37 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/18 15:25:32 by stales            #+#    #+#             */
-/*   Updated: 2022/02/26 15:13:40 by pix              ###   ########.fr       */
+/*   Created: 2022/02/26 13:17:18 by pix               #+#    #+#             */
+/*   Updated: 2022/02/26 14:00:35 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-char	*ft_itoa(long nb)
+/*
+ *	Desc:	length of an integer.
+ *
+ *	nb:		integer to take the size of.
+ *
+ * 	Return:	the length of nb, if number is negative, add +1 for the '-'.
+ */
+
+int	ft_nbrlen(long int nb)
 {
-	long int	nb_size;
-	char		*nb_str;
+	int	size;
 
-	nb_size = ft_nbrlen(nb);
-	nb_str = malloc(sizeof (char) * nb_size);
+	size = 0;
 	if (nb < 0)
 	{
 		nb = ~(nb - 1);
-		nb_str[0] = '-';
+		size++;
 	}
-	while (1)
+	while (nb > 9)
 	{
-		nb_str[nb_size - 1] = '0' + (nb % 10);
+		size++;
 		nb /= 10;
-		if (nb == 0)
-			break ;
-		nb_size--;
 	}
-	return (nb_str);
+	return (++size);
 }
