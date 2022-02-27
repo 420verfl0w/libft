@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
+#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/18 09:35:26 by stales            #+#    #+#              #
-#    Updated: 2022/02/26 15:07:36 by pix              ###   ########.fr        #
+#    Updated: 2022/02/27 21:39:13 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,7 +85,9 @@ SRCS			=	ft_atoi.c \
 					ft_strupcase.c \
 					ft_swap.c \
 					ft_tolower.c \
-					ft_toupper.c
+					ft_toupper.c \
+					ft_putnbr_fd.c
+
 OBJS			= $(SRCS:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
 
@@ -108,11 +110,11 @@ $(NAME):		$(OBJS)
 
 clean:
 				@printf "$(green)[$(red)-$(green)] Deleting object files$(reset)\n"
-				$(RM) *.o
+				@$(RM) *.o
 
 fclean:			clean
 				@printf "$(green)[$(red)-$(green)] Deleting $(yellow)$(NAME)$(reset)\n"
-				$(RM) $(NAME)
+				@$(RM) $(NAME)
 
 re:				fclean $(NAME)
 
