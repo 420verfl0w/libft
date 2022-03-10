@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 22:01:09 by stales            #+#    #+#             */
-/*   Updated: 2022/03/10 15:19:07 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/10 17:22:51 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,29 +39,27 @@ char	**ft_split(char *s, char c)
 {
 	char		**ptr;
 	char		*tmp;
-	char		*buf;
-	char		*save;
-	int			i;
-	int			x;
+	char		*buf[2];
+	int			i[2];
 
-	buf = ft_strnew(ft_strlen(s));
+	buf[0] = ft_strnew(ft_strlen(s) + 1);
 	ft_strncpy(buf, s, ft_strlen(s));
-	x = 0;
-	i = ft_get_words(buf, c);
-	save = buf;
-	ptr = (char **)malloc(sizeof(char *) * i);
-	while (x < i)
+	i[1] = 0;
+	i[0] = ft_get_words(buf, c);
+	buf[1] = buf[0];
+	ptr = (char **)malloc(sizeof(char *) * i[0]);
+	while (i[1] <= i[0])
 	{
-		while (*buf && *buf == c)
-			buf++;
-		tmp = buf;
+		while (*buf[0] && *buf[0] == c)
+			buf[0]++;
+		tmp = buf[0];
 		while (*tmp && *tmp != c)
 			tmp++;
 		*tmp = 0;
-		ptr[x] = ft_strnew(tmp - buf);
-		ft_strcpy(ptr[x++], buf);
-		buf = ++tmp;
+		ptr[i[1]] = ft_strnew(tmp - buf[0]);
+		ft_strcpy(ptr[i[1]++], buf[0]);
+		buf[0] = ++tmp;
 	}
-	free(save);
+	free(buf[1]);
 	return (ptr);
 }
