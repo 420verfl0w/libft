@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/02/27 21:36:23 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/10 14:02:13 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ typedef unsigned char	t_uint8;
 typedef unsigned int	t_uint32;
 typedef unsigned long	t_size;
 
+char		**ft_split(char *s, char c);
 void		*ft_calloc(t_size nmemb, t_size size);
 void		*ft_memccpy(void *dest, const void *src, int c, t_size n);
 void		*ft_memchr(const void *s, int c, t_size n);
@@ -38,6 +39,7 @@ char		*ft_strstr(char *str, char *to_find);
 char		*ft_strupcase(char *str);
 char		*ft_strrev(char *str);
 char		*ft_itoa(long nb);
+char		*ft_strnew(t_size size);
 t_uint32	ft_strlcat(char *dest, char *src, t_size size);
 t_uint32	ft_strlcpy(char *dest, char *src, t_size size);
 int			ft_atoi(char *str);
@@ -66,6 +68,7 @@ int			ft_strncmp(char *s1, char *s2, t_size n);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 int			ft_rev_int(int nb);
+int			ft_strcchr(char *str, char c);
 void		ft_bzero(void *s, t_size n);
 void		ft_putchar(char c);
 void		ft_putnbr(int nb);
@@ -78,5 +81,6 @@ void		ft_putstr_fd(char const *s, int fd);
 void		ft_putendl_fd(char const *s, int fd);
 void		ft_putendl(char const *s);
 void		ft_putnbr_fd(int n, int fd);
+void		ft_strdel(char **as);
 
 #endif
