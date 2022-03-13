@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtok.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/13 14:20:16 by stales            #+#    #+#             */
-/*   Updated: 2022/03/13 14:29:29 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/13 14:55:22 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strtok(char *str, char *token)
 	str = p;
 	if (!*str)
 		return ((char *)0);
-	p += strcspn(str, token);
+	p += ft_strcspn(str, token);
 	if (*p)
 		*p++ = 0;
 	return (str);

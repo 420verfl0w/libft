@@ -3,10 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
+#    By: pix <pix@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/18 09:35:26 by stales            #+#    #+#              #
+<<<<<<< HEAD
 #    Updated: 2022/03/13 15:01:05 by stales           ###   ########.fr        #
+=======
+#    Updated: 2022/03/13 14:51:08 by pix              ###   ########.fr        #
+>>>>>>> 6420f5a5d1fd8bff412dceafb0b7c4b6e901aaee
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,20 +59,25 @@ SRCS			=	ft_atoi.c \
 					ft_putchar.c \
 					ft_putendl_fd.c \
 					ft_putendl.c \
+					ft_putnbr_fd.c \
 					ft_putnbr.c \
 					ft_putstr_fd.c \
 					ft_putstr.c \
 					ft_rev_int.c \
+					ft_split.c \
 					ft_str_is_alpha.c \
 					ft_str_is_lowercase.c \
 					ft_str_is_numeric.c \
 					ft_str_is_printable.c \
 					ft_str_is_uppercase.c \
 					ft_strcat.c \
+					ft_strcchr.c \
 					ft_strchr.c \
 					ft_strclr.c \
 					ft_strcmp.c \
 					ft_strcpy.c \
+					ft_strcspn.c \
+					ft_strdel.c \
 					ft_strdup.c \
 					ft_strlcat.c \
 					ft_strlcpy.c \
@@ -78,24 +87,19 @@ SRCS			=	ft_atoi.c \
 					ft_strncmp.c \
 					ft_strncpy.c \
 					ft_strndup.c \
+					ft_strnew.c \
 					ft_strnstr.c \
 					ft_strrchr.c \
 					ft_strrev.c \
+					ft_strspn.c \
 					ft_strstr.c \
+					ft_strtok.c \
 					ft_strupcase.c \
 					ft_swap.c \
 					ft_tolower.c \
-					ft_toupper.c \
-					ft_putnbr_fd.c \
-					ft_strcchr.c \
-					ft_split.c \
-					ft_strnew.c \
-					ft_strdel.c \
-					ft_strspn.c \
-					ft_strcspn.c
+					ft_toupper.c
 
-BONUS_SRC		=	ft_lstnew.c \
-					ft_lstdelone.c
+BONUS_SRC		=	ft_lstnew.c
 OBJS			= $(SRCS:.c=.o)
 BONUS_OBJS		= $(BONUS_SRC:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
@@ -119,7 +123,7 @@ $(NAME):		$(OBJS)
 
 clean:
 				@printf "$(green)[$(red)-$(green)] Deleting object files$(reset)\n"
-				@$(RM) *.o
+				@$(RM) $(OBJS)
 
 fclean:			clean
 				@printf "$(green)[$(red)-$(green)] Deleting $(yellow)$(NAME)$(reset)\n"
