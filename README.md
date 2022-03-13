@@ -236,3 +236,6 @@ Our Libft
 |ft_strtok				|✔️       |❌             |
 |ft_strsnp				|✔️       |❌             |
 |ft_strcsnp				|✔️       |❌             |
+|ft_hex_encode			|✔️       |❌             |
+|ft_hex_decode			|✔️       |❌             |
+|ft_hex_nibble			|✔️       |❌             |
