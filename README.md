@@ -215,7 +215,7 @@ Our Libft
 |ft_strclr				|✔️       |❌             |
 |ft_strcmp				|✔️       |❌             |
 |ft_strcpy				|✔️       |❌             |
-|ft_strdel				|❌       |❌             |
+|ft_strdel				|✔️       |❌             |
 |ft_strequ				|❌       |❌             |
 |ft_striter				|❌       |❌             |
 |ft_striteri			|❌       |❌             |
@@ -226,10 +226,13 @@ Our Libft
 |ft_strncpy				|✔️       |❌             |
 |ft_strndup				|❌       |❌             |
 |ft_strnequ				|❌       |❌             |
-|ft_strnew				|❌       |❌             |
+|ft_strnew				|✔️       |❌             |
 |ft_strstr				|✔️       |❌             |
 |ft_strtok				|❌       |❌             |
 |ft_strupcase			|✔️       |✔️             |
 |ft_swap				|✔️       |❌             |
 |ft_rev_int				|✔️       |❌             |
 |ft_strrev				|✔️       |❌             |
+|ft_strtok				|✔️       |❌             |
+|ft_strsnp				|✔️       |❌             |
+|ft_strcsnp				|✔️       |❌             |

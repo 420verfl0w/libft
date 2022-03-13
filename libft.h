@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/10 14:02:13 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/13 14:29:23 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ char		*ft_strupcase(char *str);
 char		*ft_strrev(char *str);
 char		*ft_itoa(long nb);
 char		*ft_strnew(t_size size);
+char		*ft_strtok(char *str, char *token);
+t_size		ft_strcspn(char *s, const char *reject);
 t_uint32	ft_strlcat(char *dest, char *src, t_size size);
 t_uint32	ft_strlcpy(char *dest, char *src, t_size size);
 int			ft_atoi(char *str);
@@ -69,6 +71,7 @@ int			ft_tolower(int c);
 int			ft_toupper(int c);
 int			ft_rev_int(int nb);
 int			ft_strcchr(char *str, char c);
+int			ft_strspn(char *s, const char *accept);
 void		ft_bzero(void *s, t_size n);
 void		ft_putchar(char c);
 void		ft_putnbr(int nb);

@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 22:01:09 by stales            #+#    #+#             */
-/*   Updated: 2022/03/10 17:22:51 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/13 12:37:18 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ char	**ft_split(char *s, char c)
 	int			i[2];
 
 	buf[0] = ft_strnew(ft_strlen(s) + 1);
-	ft_strncpy(buf, s, ft_strlen(s));
+	ft_strncpy(buf[0], s, ft_strlen(s));
 	i[1] = 0;
-	i[0] = ft_get_words(buf, c);
+	i[0] = ft_get_words(buf[0], c);
 	buf[1] = buf[0];
 	ptr = (char **)malloc(sizeof(char *) * i[0]);
 	while (i[1] <= i[0])
