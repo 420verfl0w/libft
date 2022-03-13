@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/13 14:29:23 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/13 15:01:41 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,20 @@
 typedef unsigned char	t_uint8;
 typedef unsigned int	t_uint32;
 typedef unsigned long	t_size;
+
+typedef struct	s_list
+{
+	void			*content;
+	t_size			content_size;
+	struct s_list	*next;
+}	t_list;
+
+t_list		*ft_lstnew(void const *content, t_size content_size);
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+void		ft_lstdelone(t_list **alst, void (*del)(void *, t_size));
+void		ft_lstdel(t_list **alst, void (*del)(void *, t_size));
+void		ft_lstaddr(t_list **alst, t_list *new);
+void		ft_listiter(t_list **alst, void (*f)(t_list *elem));
 
 char		**ft_split(char *s, char c);
 void		*ft_calloc(t_size nmemb, t_size size);
