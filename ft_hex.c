@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/13 18:29:05 by stales            #+#    #+#             */
-/*   Updated: 2022/03/21 02:15:56 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/21 02:19:30 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,6 @@ unsigned char	ft_hex_nibble(char c)
 	if (c >= '0' && c <= '9')
 		return (c & 0xF);
 	if (c >= 'a' && c <= 'f')
-		return (~-(c & 0xF));
+		return (~ -(c & 0xF));
 	return (0);
 }

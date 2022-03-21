@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 15:25:32 by stales            #+#    #+#             */
-/*   Updated: 2022/03/21 02:16:45 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/21 02:50:25 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_itoa(long nb)
 	nb_str = malloc(sizeof (char) * nb_size);
 	if (nb < 0)
 	{
-		nb = ~-nb;
+		nb = ~ -nb;
 		nb_str[0] = '-';
 	}
 	while (1)
