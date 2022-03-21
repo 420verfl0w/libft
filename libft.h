@@ -6,17 +6,32 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/13 22:11:02 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/21 02:02:37 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define LIBFT_NULL (void *)0
 
 typedef unsigned char	t_uint8;
 typedef unsigned int	t_uint32;
 typedef unsigned long	t_size;
 
+typedef struct list
+{
+	struct list	*next;
+	struct list	*prev;
+	void		*content;
+	t_size		size;
+}	t_list;
+
+t_list			*ft_list_create_void(void);
+t_list			*ft_list_create(void *content, t_size size);
+t_list			*ft_list_insert(t_list **list, t_list *new, t_uint32 index);
+t_list			*ft_list_swap(t_list **list, t_list *a, t_list *b);
+t_list			*ft_list_swap_index(t_list **list, int a, int b);
+t_list			*ft_list_get(t_list *list, t_uint32 index);
 unsigned char	*ft_hex_encode(unsigned char *dst, char *src, t_size size);
 unsigned char	*ft_hex_decode(unsigned char *dst, char *src, t_size size);
 char			**ft_split(char *s, char c);
@@ -46,6 +61,7 @@ char			*ft_strtok(char *str, char *token);
 t_size			ft_strcspn(char *s, const char *reject);
 t_uint32		ft_strlcat(char *dest, char *src, t_size size);
 t_uint32		ft_strlcpy(char *dest, char *src, t_size size);
+t_uint32		ft_list_len(t_list *list);
 int				ft_atoi(char *str);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -88,5 +104,11 @@ void			ft_putendl_fd(char const *s, int fd);
 void			ft_putendl(char const *s);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_strdel(char **as);
+void			ft_list_free(t_list **list);
+void			ft_list_push(t_list **list, t_list *new);
+void			ft_list_pop(t_list **list);
+void			ft_list_push_back(t_list **list, t_list *new);
+void			ft_list_pop_back(t_list **list);
+void			ft_list_remove(t_list **list, int index);
 
 #endif

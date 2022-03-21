@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtok.c                                        :+:      :+:    :+:   */
+/*   ft_list_create.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/13 14:20:16 by stales            #+#    #+#             */
-/*   Updated: 2022/03/21 01:39:26 by stales           ###   ########.fr       */
+/*   Created: 2022/03/20 22:31:10 by stales            #+#    #+#             */
+/*   Updated: 2022/03/20 23:12:13 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-char	*ft_strtok(char *str, char *token)
+t_list	*ft_list_create(void *content, t_size size)
 {
-	static char	*p;
+	t_list	*ptr;
 
-	if (str)
-		p = str;
-	if (!p || !token)
-		return (LIBFT_NULL);
-	str = p;
-	if (!*str)
-		return (LIBFT_NULL);
-	p += ft_strcspn(str, token);
-	if (*p)
-		*p++ = 0;
-	return (str);
+	ptr = (t_list *)malloc(sizeof(t_list));
+	if (!ptr)
+		return (NULL);
+	ptr->next = NULL;
+	ptr->prev = NULL;
+	ptr->content = content;
+	ptr->size = size;
+	return (ptr);
 }

@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtok.c                                        :+:      :+:    :+:   */
+/*   ft_list_get.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/13 14:20:16 by stales            #+#    #+#             */
-/*   Updated: 2022/03/21 01:39:26 by stales           ###   ########.fr       */
+/*   Created: 2022/03/21 00:53:37 by stales            #+#    #+#             */
+/*   Updated: 2022/03/21 01:59:54 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtok(char *str, char *token)
+t_list	*ft_list_get(t_list *list, t_uint32 index)
 {
-	static char	*p;
+	t_uint32	i;
 
-	if (str)
-		p = str;
-	if (!p || !token)
-		return (LIBFT_NULL);
-	str = p;
-	if (!*str)
-		return (LIBFT_NULL);
-	p += ft_strcspn(str, token);
-	if (*p)
-		*p++ = 0;
-	return (str);
+	i = 0;
+	while (list && i != index)
+	{
+		list = list->next;
+		i++;
+	}
+	return (list);
 }
