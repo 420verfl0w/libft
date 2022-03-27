@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 22:35:29 by stales            #+#    #+#             */
-/*   Updated: 2022/03/20 23:25:51 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/27 18:47:30 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_list_free(t_list **list)
 {
 	t_list	*next;
 
-	next = NULL;
 	while (*list)
 	{
 		next = (*list)->next;

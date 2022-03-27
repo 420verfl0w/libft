@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/21 02:02:37 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/27 18:46:30 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ typedef struct list
 t_list			*ft_list_create_void(void);
 t_list			*ft_list_create(void *content, t_size size);
 t_list			*ft_list_insert(t_list **list, t_list *new, t_uint32 index);
-t_list			*ft_list_swap(t_list **list, t_list *a, t_list *b);
-t_list			*ft_list_swap_index(t_list **list, int a, int b);
 t_list			*ft_list_get(t_list *list, t_uint32 index);
 unsigned char	*ft_hex_encode(unsigned char *dst, char *src, t_size size);
 unsigned char	*ft_hex_decode(unsigned char *dst, char *src, t_size size);

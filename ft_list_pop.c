@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 22:57:45 by stales            #+#    #+#             */
-/*   Updated: 2022/03/20 23:26:06 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/27 18:47:04 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ void	ft_list_pop(t_list **list)
 	next = (*list)->next;
 	free(*list);
 	if (next)
-		next->prev = (t_list *)0;
+		next->prev = LIBFT_NULL;
 	*list = next;
 }
