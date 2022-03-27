@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 22:53:25 by stales            #+#    #+#             */
-/*   Updated: 2022/03/20 22:57:06 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/27 21:23:55 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	ft_list_push(t_list **list, t_list *new)
 {
 	(*list)->prev = new;
 	new->next = (*list);
-	new->prev = (t_list *)0;
+	new->prev = LIBFT_NULL;
 	*list = new;
 }

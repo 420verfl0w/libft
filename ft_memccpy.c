@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 15:11:10 by stales            #+#    #+#             */
-/*   Updated: 2022/02/19 14:09:36 by pix              ###   ########.fr       */
+/*   Updated: 2022/03/27 19:42:15 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ void	*ft_memccpy(void *dest, const void *src, int c, t_size n)
 			return (tdst);
 		tsrc++;
 	}
-	return ((void *)0);
+	return (LIBFT_NULL);
 }
