@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/27 20:36:20 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/27 23:29:01 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 # define LIBFT_H
 # define LIBFT_NULL (void *)0
 
-typedef unsigned char	t_uint8;
-typedef unsigned int	t_uint32;
-typedef unsigned long	t_size;
+typedef unsigned char		t_uint8;
+typedef unsigned int		t_uint32;
+typedef unsigned long		t_size;
+typedef long long			t_int64;
 
 typedef struct list
 {
