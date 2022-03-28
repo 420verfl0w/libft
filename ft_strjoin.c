@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 13:58:41 by stales            #+#    #+#             */
-/*   Updated: 2022/03/28 14:10:12 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/28 14:12:01 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr = (char *)malloc(size);
 	if (!ptr)
 		return (LIBFT_NULL);
-	ptr[size + 1] = 0;
+	ptr[size] = 0;
 	ft_strcpy(ptr, (char *)s1);
 	ft_strcat(ptr, (char *)s2);
 	return (ptr);
