@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/18 15:25:32 by stales            #+#    #+#             */
-/*   Updated: 2022/03/28 13:06:29 by stales           ###   ########.fr       */
+/*   Created: 2022/03/28 13:18:24 by stales            #+#    #+#             */
+/*   Updated: 2022/03/28 13:32:30 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ft_itoa(long nb)
+char	*ft_substr(char const *s, unsigned int start, t_size len)
 {
-	long int	nb_size;
-	char		*nb_str;
+	char	*str;
 
-	nb_size = ft_nbrlen(nb);
-	nb_str = malloc(sizeof (char) * nb_size);
-	if (nb < 0)
-	{
-		nb = ~(nb - 1);
-		nb_str[0] = '-';
-	}
-	while (1)
-	{
-		nb_str[nb_size - 1] = '0' + (nb % 10);
-		nb /= 10;
-		if (nb == 0)
-			break ;
-		nb_size--;
-	}
-	return (nb_str);
+	str = (char *)malloc(len + 1);
+	if (!str)
+		return (LIBFT_NULL);
+	ft_strncpy(str, (char *)(s + start), len);
+	str[len + 1] = 0;
+	return (str);
 }

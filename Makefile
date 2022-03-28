@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/13 15:06:45 by stales            #+#    #+#              #
-#    Updated: 2022/03/27 21:00:02 by stales           ###   ########.fr        #
+#    Updated: 2022/03/28 13:33:39 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -104,7 +104,8 @@ SRCS			=	ft_atoi.c \
 					ft_list_push_back.c \
 					ft_list_pop_back.c \
 					ft_list_get.c	\
-					ft_list_remove.c
+					ft_list_remove.c \
+					ft_substr.c
 
 BONUS_SRC		=	ft_lstnew.c
 OBJS			= $(SRCS:.c=.o)
