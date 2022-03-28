@@ -6,11 +6,13 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:24:34 by stales            #+#    #+#             */
-/*   Updated: 2022/03/21 02:22:07 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/28 12:48:38 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+#include <stdio.h>
 
 /*
  *	Desc:	The  ft_atoi() function converts the initial portion of the string
@@ -32,7 +34,7 @@ int	ft_atoi(char *nptr)
 		nptr++;
 	if ((*nptr == '+' || *nptr == '-'))
 		if (*nptr++ == '-')
-			neg = ~ -(neg);
+			neg = ~(neg - 1);
 	while (*nptr >= '0' && *nptr <= '9')
 	{
 		to_dec *= 0xA;
