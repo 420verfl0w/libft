@@ -1,30 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strrem.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/28 14:15:57 by stales            #+#    #+#             */
-/*   Updated: 2022/03/28 14:47:40 by stales           ###   ########.fr       */
+/*   Created: 2022/03/28 14:52:46 by stales            #+#    #+#             */
+/*   Updated: 2022/03/28 16:34:28 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-char	*ft_strmapi(char const *s1, char (*f)(unsigned int, char))
+char	*ft_strrem(char *ptr, char const *s1, char const *set)
 {
-	char	*ptr;
-	int		i;
+	char	*s_ptr;
+	char	*p_set;
+	char	*p_s1;
 
-	i = 0;
-	ptr = (char *)malloc(ft_strlen((char *)s1) + 1);
-	while (s1[i])
+	s_ptr = ptr;
+	p_s1 = (char *)s1;
+	while (*p_s1)
 	{
-		ptr[i] = f(i, s1[i]);
-		i++;
+		p_set = (char *)set;
+		while (*p_set)
+		{
+			if (*p_s1 == *p_set)
+				break ;
+			p_set++;
+		}
+		if (*p_set == 0)
+			*ptr++ = *p_s1++;
+		else
+			p_s1++;
 	}
-	ptr[i] = 0;
-	return (ptr);
+	return (s_ptr);
 }
