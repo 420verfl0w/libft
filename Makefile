@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
+#    By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/13 15:06:45 by stales            #+#    #+#              #
-#    Updated: 2022/03/29 17:59:31 by stales           ###   ########.fr        #
+#    Updated: 2022/03/29 18:00:59 by brda-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,18 +22,18 @@ blinking		= \033[5m
 reset			= \033[0m
 
 define print_ascii
-	printf "$(green)"
-	printf "██▓     ██▓ ▄▄▄▄     █████▒▄▄▄█████▓\n"
-	printf "▓██▒    ▓██▒▓█████▄ ▓██   ▒ ▓  ██▒ ▓▒\n"
-	printf "▒██░    ▒██▒▒██▒ ▄██▒████ ░ ▒ ▓██░ ▒░\n"
-	printf "▒██░    ░██░▒██░█▀  ░▓█▒  ░ ░ ▓██▓ ░\n"
-	printf "░██████▒░██░░▓█  ▀█▓░▒█░      ▒██▒ ░\n"
-	printf "░ ▒░▓  ░░▓  ░▒▓███▀▒ ▒ ░      ▒ ░░\n"
-	printf "░ ░ ▒  ░ ▒ ░▒░▒   ░  ░          ░\n"
-	printf "  ░ ░    ▒ ░ ░    ░  ░ ░      ░\n"
-	printf "    ░  ░ ░   ░\n"
-	printf "                  ░\n"
-	printf "$(reset)"
+	@printf "$(green)"
+	@printf "██▓     ██▓ ▄▄▄▄     █████▒▄▄▄█████▓\n"
+	@printf "▓██▒    ▓██▒▓█████▄ ▓██   ▒ ▓  ██▒ ▓▒\n"
+	@printf "▒██░    ▒██▒▒██▒ ▄██▒████ ░ ▒ ▓██░ ▒░\n"
+	@printf "▒██░    ░██░▒██░█▀  ░▓█▒  ░ ░ ▓██▓ ░\n"
+	@printf "░██████▒░██░░▓█  ▀█▓░▒█░      ▒██▒ ░\n"
+	@printf "░ ▒░▓  ░░▓  ░▒▓███▀▒ ▒ ░      ▒ ░░\n"
+	@printf "░ ░ ▒  ░ ▒ ░▒░▒   ░  ░          ░\n"
+	@printf "  ░ ░    ▒ ░ ░    ░  ░ ░      ░\n"
+	@printf "    ░  ░ ░   ░\n"
+	@printf "                  ░\n"
+	@printf "$(reset)"
 endef
 
 # **************************************************************************** #
@@ -152,7 +152,7 @@ all:			$(NAME)
 $(NAME):		$(OBJS)
 	@printf "$(green)[$(blue)+$(green)] Creation of $(blue)libft.a$(reset)\n"
 	@ar rcs $(NAME) $(OBJS)
-	@$(print_ascii)
+	$(print_ascii)
 
 clean:
 	@printf "$(green)[$(red)-$(green)] Deleting object files$(reset)\n"
@@ -168,6 +168,7 @@ re:				fclean $(NAME)
 bonus:			$(OBJS) $(BONUS_OBJS)
 	@printf "$(green)[$(blue)+$(green)] Creation of $(blue)libft.a$(green) with bonus $(reset)\n"
 	@ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+	$(print_ascii)
 
 .PHONY:			all clean fclean re
 
