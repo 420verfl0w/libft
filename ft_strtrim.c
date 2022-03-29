@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/17 21:54:11 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 11:16:34 by stales           ###   ########.fr       */
+/*   Created: 2022/03/29 12:08:31 by stales            #+#    #+#             */
+/*   Updated: 2022/03/29 14:34:28 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*tmp;
-	char	*sstr;
+	char	*end;
+	char	*start;
+	char	*ptr;
 
-	if (!*to_find)
-		return (str);
-	while (str && to_find && *str)
-	{
-		if (*str == *to_find)
-		{
-			tmp = to_find;
-			sstr = str;
-			while (*sstr && *tmp && *sstr++ == *tmp)
-				tmp++;
-			if (*tmp == 0)
-				return (str);
-		}
-		str++;
-	}
-	return (LIBFT_NULL);
+	end = (char *)(s1 + ft_strlen((char *)s1) - 1);
+	start = (char *)s1;
+	while (*start && ft_strchr(set, *start))
+		start++;
+	while (*end && ft_strchr(set, *end) && end > start)
+		end--;
+	ptr = (char *)malloc(end++ - start + 1);
+	if (ptr)
+		ft_strlcpy(ptr, start, end - start + 1);
+	return (ptr);
 }

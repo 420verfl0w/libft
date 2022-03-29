@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:24:34 by stales            #+#    #+#             */
-/*   Updated: 2022/03/28 12:48:38 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/29 10:36:57 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int	ft_atoi(char *nptr)
 	int		to_dec;
 	int		neg;
 
-	to_dec = 0x0;
-	neg = 0x1;
+	to_dec = 0;
+	neg = 1;
 	while (*nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
 		nptr++;
 	if ((*nptr == '+' || *nptr == '-'))

@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/28 17:31:38 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/29 11:46:18 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ char			*ft_substr(char const *s, unsigned int start, t_size len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strmapi(char const *s1, char (*f)(unsigned int, char));
 char			*ft_strrem(char *ptr, char const *s1, char const *set);
+char			*ft_strtrim(char const *s1, char const *set);
 t_size			ft_strcspn(char *s, const char *reject);
 t_uint32		ft_strlcat(char *dest, char *src, t_size size);
 t_uint32		ft_strlcpy(char *dest, char *src, t_size size);
