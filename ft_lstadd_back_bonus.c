@@ -6,17 +6,22 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:39:05 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 17:55:54 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/29 18:19:27 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast_back(t_list **list, t_list *new)
+t_list	*ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*ptr;
 
-	ptr = *list;
+	if (lst == LIBFT_NULL || *lst == LIBFT_NULL)
+	{
+		*lst = new;
+		return (*lst);
+	}
+	ptr = *lst;
 	while (ptr->next)
 		ptr = ptr->next;
 	ptr->next = new;
