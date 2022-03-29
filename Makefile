@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
+#    By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/13 15:06:45 by stales            #+#    #+#              #
-#    Updated: 2022/03/29 17:02:23 by stales           ###   ########.fr        #
+#    Updated: 2022/03/29 17:04:41 by brda-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -110,7 +110,8 @@ SRCS			=	ft_atoi.c \
 					ft_strmapi.c	\
 					ft_strrem.c		\
 					ft_strtrim.c	\
-					ft_striteri.c
+					ft_striteri.c	\
+					ft_get_words.c
 
 BONUS_SRC		=	ft_lstnew_bonus.c
 OBJS			= $(SRCS:.c=.o)
