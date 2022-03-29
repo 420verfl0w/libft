@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 12:08:31 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 15:29:12 by stales           ###   ########.fr       */
+/*   Created: 2022/03/29 15:30:54 by stales            #+#    #+#             */
+/*   Updated: 2022/03/29 15:37:26 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-char	*ft_strtrim(char const *s1, char const *set)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	char	*end;
-	char	*start;
-	char	*ptr;
+	int	i;
 
-	end = (char *)(s1 + ft_strlen((char *)s1) - 1);
-	start = (char *)s1;
-	while (*start && ft_strchr(set, *start))
-		start++;
-	while (*end && ft_strchr(set, *end) && end > start)
-		end--;
-	ptr = (char *)malloc(end++ - start + 1);
-	if (ptr)
-		ft_strlcpy(ptr, start, end - start + 1);
-	return (ptr);
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }

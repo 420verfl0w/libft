@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 11:46:18 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/29 15:37:40 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,5 +114,6 @@ void			ft_list_pop(t_list **list);
 void			ft_list_push_back(t_list **list, t_list *new);
 void			ft_list_pop_back(t_list **list);
 void			ft_list_remove(t_list **list, int index);
+void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif

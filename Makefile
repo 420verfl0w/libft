@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/13 15:06:45 by stales            #+#    #+#              #
-#    Updated: 2022/03/29 13:56:58 by stales           ###   ########.fr        #
+#    Updated: 2022/03/29 15:38:22 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -109,7 +109,8 @@ SRCS			=	ft_atoi.c \
 					ft_strjoin.c	\
 					ft_strmapi.c	\
 					ft_strrem.c		\
-					ft_strtrim.c
+					ft_strtrim.c	\
+					ft_striteri.c
 
 BONUS_SRC		=	ft_lstnew.c
 OBJS			= $(SRCS:.c=.o)
