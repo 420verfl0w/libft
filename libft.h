@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 15:37:40 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/29 16:08:09 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ typedef unsigned int		t_uint32;
 typedef unsigned long		t_size;
 typedef long long			t_int64;
 
-typedef struct list
+typedef struct s_list
 {
-	struct list	*next;
-	struct list	*prev;
-	void		*content;
-	t_size		size;
+	struct s_list	*next;
+	struct s_list	*prev;
+	void			*content;
+	t_size			size;
 }	t_list;
 
 t_list			*ft_list_create_void(void);
