@@ -3,63 +3,55 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 22:01:09 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 15:29:22 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/29 19:20:33 by brda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-int	ft_get_words(char *str, char c)
+char	*init_str(char *s, char c)
 {
-	int	i;
+	int		i;
+	char	*ptr;
 
 	i = 0;
-	while (*str)
-	{
-		while (*str && *str != c)
-			str++;
-		if (*str == c)
-		{
-			while (*str && *str == c)
-				str++;
-			if (*str && *str != c)
-				i++;
-		}
-	}
-	if (!i)
+	while (s[i] && s[i] != c)
 		i++;
-	return (i);
+	ptr = (char *)malloc(sizeof(char) * (i + 1));
+	if (!ptr)
+		return (NULL);
+	ft_strlcpy(ptr, s, i + 1);
+	return (ptr);
 }
 
 char	**ft_split(char *s, char c)
 {
-	char		**ptr;
-	char		*tmp;
-	char		*buf[2];
-	int			i[2];
+	int		i[2];
+	char	**ptr;
 
-	buf[0] = ft_strnew(ft_strlen(s) + 1);
-	ft_strncpy(buf[0], s, ft_strlen(s));
-	i[1] = 0;
-	i[0] = ft_get_words(buf[0], c);
-	buf[1] = buf[0];
-	ptr = (char **)malloc(sizeof(char *) * i[0]);
-	while (i[1] <= i[0])
+	if (!s)
+		return (NULL);
+	i[1] = ft_get_words(s, c);
+	ptr = (char **)malloc(sizeof(char *) * (i[1] + 1));
+	i[0] = -1;
+	while (ptr && ++i[0] < i[1])
 	{
-		while (*buf[0] && *buf[0] == c)
-			buf[0]++;
-		tmp = buf[0];
-		while (*tmp && *tmp != c)
-			tmp++;
-		*tmp = 0;
-		ptr[i[1]] = ft_strnew(tmp - buf[0]);
-		ft_strcpy(ptr[i[1]++], buf[0]);
-		buf[0] = ++tmp;
+		while (s[0] == c)
+			s++;
+		ptr[i[0]] = init_str(s, c);
+		if (!ptr[i[0]])
+		{
+			while (i[0] > 0)
+				free(ptr[i[0]--]);
+			free(ptr);
+			return (NULL);
+		}
+		s = s + ft_strlen(ptr[i[0]]);
 	}
-	free(buf[1]);
+	ptr[i[0]] = 0;
 	return (ptr);
 }

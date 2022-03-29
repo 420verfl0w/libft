@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
+#    By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 18:23:35 by stales            #+#    #+#              #
-#    Updated: 2022/03/29 18:23:38 by stales           ###   ########.fr        #
+#    Updated: 2022/03/29 19:06:02 by brda-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,11 @@ yellow			= \033[38;5;226m
 blinking		= \033[5m
 reset			= \033[0m
 
+font_color		= $(blue)
+bold			= $(red)
+
 define print_ascii
-	@printf "$(green)"
+	@printf "$(red)"
 	@printf "██▓     ██▓ ▄▄▄▄     █████▒▄▄▄█████▓\n"
 	@printf "▓██▒    ▓██▒▓█████▄ ▓██   ▒ ▓  ██▒ ▓▒\n"
 	@printf "▒██░    ▒██▒▒██▒ ▄██▒████ ░ ▒ ▓██░ ▒░\n"
@@ -145,27 +148,27 @@ NAME			= libft.a
 all:			$(NAME)
 
 %.o: %.c
-	@printf "$(green)[$(blue)+$(green)] Creation of the object $(yellow)$< $(blinking)$(green) -> $(reset)$(yellow) $@ $(reset)\n"
+	@printf "$(font_color)[$(green)+$(font_color)] Creation of the object $(bold)$< $(blinking)$(font_color) -> $(reset)$(bold) $@ $(reset)\n"
 	@$(CC) $(CFLAGS) -o $@ -c $<
 
 $(NAME):		$(OBJS)
-	@printf "$(green)[$(blue)+$(green)] Creation of $(blue)libft.a$(reset)\n"
+	@printf "$(font_color)[$(green)+$(font_color)] Creation of $(bold)libft.a$(reset)\n"
 	@ar rcs $(NAME) $(OBJS)
 	$(print_ascii)
 
 clean:
-	@printf "$(green)[$(red)-$(green)] Deleting object files$(reset)\n"
+	@printf "$(font_color)[$(red)-$(font_color)] Deleting object files$(reset)\n"
 	@$(RM) $(OBJS)
 	@$(RM) $(BONUS_OBJS)
 
 fclean:			clean
-	@printf "$(green)[$(red)-$(green)] Deleting $(yellow)$(NAME)$(reset)\n"
+	@printf "$(font_color)[$(red)-$(font_color)] Deleting $(bold)$(NAME)$(reset)\n"
 	@$(RM) $(NAME)
 
 re:				fclean $(NAME)
 
 bonus:			$(OBJS) $(BONUS_OBJS)
-	@printf "$(green)[$(blue)+$(green)] Creation of $(blue)libft.a$(green) with bonus $(reset)\n"
+	@printf "$(font_color)[$(green)+$(font_color)] Creation of $(bold)libft.a$(font_color) with bonus $(reset)\n"
 	@ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 	$(print_ascii)
 
