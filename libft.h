@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 16:08:09 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/29 16:28:59 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,15 @@ typedef struct s_list
 	void			*content;
 	t_size			size;
 }	t_list;
+
+/////////////////////////////////////
+//
+//	FUNCTION BONUS
+//
+/////////////////////////////////////
+
+t_list			*ft_lstnew(void *content);
+void			ft_lstadd_front(t_list **lst, t_list *new);
 
 t_list			*ft_list_create_void(void);
 t_list			*ft_list_create(void *content, t_size size);

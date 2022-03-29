@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/13 15:06:45 by stales            #+#    #+#              #
-#    Updated: 2022/03/29 16:01:37 by stales           ###   ########.fr        #
+#    Updated: 2022/03/29 17:02:23 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -112,7 +112,7 @@ SRCS			=	ft_atoi.c \
 					ft_strtrim.c	\
 					ft_striteri.c
 
-BONUS_SRC		=	ft_lstnew.c
+BONUS_SRC		=	ft_lstnew_bonus.c
 OBJS			= $(SRCS:.c=.o)
 BONUS_OBJS		= $(BONUS_SRC:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
