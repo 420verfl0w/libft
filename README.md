@@ -172,15 +172,15 @@ Our Libft
 
 |Fonctions			|is_done ?|is_documented ?|
 |:------------------|:-------:|:-------------:|
-|ft_lstadd_back		|❌       |❌             |
-|ft_lstadd_front	|❌       |❌             |
-|ft_lstclear		|❌       |❌             |
-|ft_lstdelone		|❌       |❌             |
-|ft_lstiter			|❌       |❌             |
-|ft_lstlast			|❌       |❌             |
+|ft_lstadd_back		|✔️       |❌             |
+|ft_lstadd_front	|✔️       |❌             |
+|ft_lstclear		|✔️       |❌             |
+|ft_lstdelone		|✔️       |❌             |
+|ft_lstiter			|✔️       |❌             |
+|ft_lstlast			|✔️       |❌             |
 |ft_lstmap			|❌       |❌             |
-|ft_lstnew			|❌       |❌             |
-|ft_lstsize			|❌       |❌             |
+|ft_lstnew			|✔️       |❌             |
+|ft_lstsize			|✔️       |❌             |
 
 ---
 
@@ -215,7 +215,7 @@ Our Libft
 |ft_strdel				|✔️       |❌             |
 |ft_strequ				|✔️       |❌             |
 |ft_striteri			|✔️       |❌             |
-|ft_strlowcase			|✔️       |✔️               |
+|ft_strlowcase			|✔️       |✔️             |
 |ft_strmap				|✔️       |❌             |
 |ft_strncat				|✔️       |❌             |
 |ft_strncpy				|✔️       |❌             |
