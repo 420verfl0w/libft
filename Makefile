@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+         #
+#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/13 15:06:45 by stales            #+#    #+#              #
-#    Updated: 2022/03/29 17:04:41 by brda-sil         ###   ########.fr        #
+#    Updated: 2022/03/29 17:15:12 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -113,7 +113,8 @@ SRCS			=	ft_atoi.c \
 					ft_striteri.c	\
 					ft_get_words.c
 
-BONUS_SRC		=	ft_lstnew_bonus.c
+BONUS_SRC		=	ft_lstnew_bonus.c \
+					ft_lstadd_front.c
 OBJS			= $(SRCS:.c=.o)
 BONUS_OBJS		= $(BONUS_SRC:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
