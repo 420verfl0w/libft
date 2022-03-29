@@ -161,10 +161,10 @@ Our Libft
 |ft_putnbr_fd		|✔️       |❌             |
 |ft_putstr_fd		|✔️       |❌             |
 |ft_split			|✔️       |❌             |
-|ft_strjoin			|❌       |❌             |
-|ft_strmapi			|❌       |❌             |
-|ft_strtrim			|❌       |❌             |
-|ft_substr			|❌       |❌             |
+|ft_strjoin			|✔️       |❌             |
+|ft_strmapi			|✔️       |❌             |
+|ft_strtrim			|✔️       |❌             |
+|ft_substr			|✔️       |❌             |
 
 ---
 
@@ -208,27 +208,19 @@ Our Libft
 |ft_str_is_numeric		|✔️       |✔️             |
 |ft_str_is_printable	|✔️       |✔️             |
 |ft_str_is_uppercase	|✔️       |✔️             |
-|ft_strcapitalize		|❌       |❌             |
-|ft_strcasecmp			|❌       |❌             |
-|ft_strcasestr			|❌       |❌             |
 |ft_strcat				|✔️       |❌             |
 |ft_strclr				|✔️       |❌             |
 |ft_strcmp				|✔️       |❌             |
 |ft_strcpy				|✔️       |❌             |
 |ft_strdel				|✔️       |❌             |
-|ft_strequ				|❌       |❌             |
-|ft_striter				|❌       |❌             |
-|ft_striteri			|❌       |❌             |
-|ft_strlowcase			|✔️       |✔️             |
-|ft_strmap				|❌       |❌             |
-|ft_strncasecmp			|❌       |❌             |
+|ft_strequ				|✔️       |❌             |
+|ft_striteri			|✔️       |❌             |
+|ft_strlowcase			|✔️       |✔️               |
+|ft_strmap				|✔️       |❌             |
 |ft_strncat				|✔️       |❌             |
 |ft_strncpy				|✔️       |❌             |
-|ft_strndup				|❌       |❌             |
-|ft_strnequ				|❌       |❌             |
 |ft_strnew				|✔️       |❌             |
 |ft_strstr				|✔️       |❌             |
-|ft_strtok				|❌       |❌             |
 |ft_strupcase			|✔️       |✔️             |
 |ft_swap				|✔️       |❌             |
 |ft_rev_int				|✔️       |❌             |
