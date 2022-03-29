@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+         #
+#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/13 15:06:45 by stales            #+#    #+#              #
-#    Updated: 2022/03/29 17:46:23 by brda-sil         ###   ########.fr        #
+#    Updated: 2022/03/29 17:59:31 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -130,7 +130,9 @@ SRCS			=	ft_atoi.c \
 
 BONUS_SRC		=	ft_lstnew_bonus.c \
 					ft_lstadd_front_bonus.c \
-					ft_lstsize_bonus.c
+					ft_lstsize_bonus.c \
+					ft_lstadd_back_bonus.c
+
 OBJS			= $(SRCS:.c=.o)
 BONUS_OBJS		= $(BONUS_SRC:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.

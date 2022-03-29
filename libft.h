@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:16:35 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 17:22:36 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/29 17:48:59 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ typedef struct s_list
 /////////////////////////////////////
 
 t_list			*ft_lstnew(void *content);
+t_list			*ft_lstlast_back(t_list **list, t_list *new);
 int				ft_lstsize(t_list *lst);
 void			ft_lstadd_front(t_list **lst, t_list *new);
-
 
 t_list			*ft_list_create_void(void);
 t_list			*ft_list_create(void *content, t_size size);

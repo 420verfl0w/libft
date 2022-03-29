@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 17:10:46 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 17:48:48 by stales           ###   ########.fr       */
+/*   Created: 2022/03/29 17:39:05 by stales            #+#    #+#             */
+/*   Updated: 2022/03/29 17:55:54 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstlast_back(t_list **list, t_list *new)
 {
-	new->next = *lst;
-	*lst = new;
+	t_list	*ptr;
+
+	ptr = *list;
+	while (ptr->next)
+		ptr = ptr->next;
+	ptr->next = new;
+	return (ptr->next);
 }
