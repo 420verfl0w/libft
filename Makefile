@@ -67,6 +67,10 @@ $(NAME):		$(OBJS)
 	@ar rcs $(NAME) $(OBJS)
 	$(print_ascii)
 
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	gcc -nostartfiles -shared -o libft.so $(OBJS)
+
 clean:
 	@printf "$(font_color)[$(red)-$(font_color)] Deleting object files$(reset)\n"
 	@$(RM) $(OBJS)
