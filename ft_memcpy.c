@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 14:32:38 by stales            #+#    #+#             */
-/*   Updated: 2022/02/19 14:22:33 by pix              ###   ########.fr       */
+/*   Updated: 2022/03/30 17:36:34 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ void	*ft_memcpy(void *dest, const void *src, t_size n)
 	unsigned char	*tdst;
 	unsigned char	*tsrc;
 
+	if (!dest && !src)
+		return (dest);
 	tsrc = (unsigned char *)src;
 	tdst = (unsigned char *)dest;
 	while (n--)
