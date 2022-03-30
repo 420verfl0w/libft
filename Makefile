@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 18:23:35 by stales            #+#    #+#              #
-#    Updated: 2022/03/30 17:15:35 by stales           ###   ########.fr        #
+#    Updated: 2022/03/30 17:17:15 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,7 @@ $(NAME):		$(OBJS)
 
 so:
 	$(CC) -c -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
+	gcc -nostartfiles -shared -o $(LIBSHARE) $(OBJS)
 
 clean:
 	@printf "$(font_color)[$(red)-$(font_color)] Deleting object files$(reset)\n"
