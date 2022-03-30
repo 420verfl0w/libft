@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+         #
+#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 18:23:35 by stales            #+#    #+#              #
-#    Updated: 2022/03/29 20:43:28 by brda-sil         ###   ########.fr        #
+#    Updated: 2022/03/30 16:45:16 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ $(NAME):		$(OBJS)
 	$(print_ascii)
 
 so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	$(CC) -c -fPIC $(CFLAGS) $(SRCS)
 	gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 clean:
