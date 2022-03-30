@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:00:23 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 16:32:45 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/30 18:08:54 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,17 @@
 
 int	ft_memcmp(const void *s1, const void *s2, t_size n)
 {
-	t_uint8	*ts1;
-	t_uint8	*ts2;
+	unsigned char	*ts1;
+	unsigned char	*ts2;
 
 	if (!n)
 		return (0);
-	ts1 = (t_uint8 *)s1;
-	ts2 = (t_uint8 *)s2;
-	while (*ts1 && *ts2 && --n && *ts1++ == *ts2)
+	ts1 = (unsigned char *)s1;
+	ts2 = (unsigned char *)s2;
+	while (--n && *ts1 == *ts2)
+	{
+		ts1++;
 		ts2++;
+	}
 	return (*ts1 - *ts2);
 }
