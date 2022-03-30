@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 13:52:28 by stales            #+#    #+#             */
-/*   Updated: 2022/02/19 13:32:06 by pix              ###   ########.fr       */
+/*   Updated: 2022/03/30 17:18:27 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ void	ft_bzero(void *s, t_size n)
 {
 	unsigned char	*tmp;
 
-	if (!s)
-		return ;
 	tmp = (unsigned char *)s;
 	while (n--)
 		*tmp++ = 0;
