@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 18:23:35 by stales            #+#    #+#              #
-#    Updated: 2022/03/30 16:45:16 by stales           ###   ########.fr        #
+#    Updated: 2022/03/30 17:15:35 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,7 @@ OBJS			= $(SRCS:.c=.o)
 BONUS_OBJS		= $(BONUS_SRC:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
 NAME			= libft.a
+LIBSHARE		= libft.so
 
 # **************************************************************************** #
 
@@ -75,10 +76,11 @@ clean:
 	@printf "$(font_color)[$(red)-$(font_color)] Deleting object files$(reset)\n"
 	@$(RM) $(OBJS)
 	@$(RM) $(BONUS_OBJS)
+	@$(RM) $(LIBSHARE)
 
 fclean:			clean
 	@printf "$(font_color)[$(red)-$(font_color)] Deleting $(bold)$(NAME)$(reset)\n"
-	@$(RM) $(NAME)
+	@$(RM) $(NAME) $(LIBSHARE)
 
 re:				fclean $(NAME)
 
