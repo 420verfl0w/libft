@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:58:06 by stales            #+#    #+#             */
-/*   Updated: 2022/02/19 14:26:06 by pix              ###   ########.fr       */
+/*   Updated: 2022/03/30 17:42:42 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ void	*ft_memmove(void *dest, const void *src, t_size n)
 	t_uint8	*tdst;
 	t_uint8	*tsrc;
 
+	if (!dest && !src)
+		return (dest);
 	tdst = (t_uint8 *)dest;
 	tsrc = (t_uint8 *)src;
 	if (tdst > tsrc)
