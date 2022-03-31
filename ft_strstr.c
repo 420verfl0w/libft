@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 21:54:11 by stales            #+#    #+#             */
-/*   Updated: 2022/03/29 11:16:34 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/31 11:00:22 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strstr(char *str, char *to_find)
 
 	if (!*to_find)
 		return (str);
-	while (str && to_find && *str)
+	while (to_find && *str)
 	{
 		if (*str == *to_find)
 		{
