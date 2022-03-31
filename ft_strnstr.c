@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 21:54:11 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 01:19:55 by pix              ###   ########.fr       */
+/*   Updated: 2022/03/31 15:07:03 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnstr(char *str, char *to_find, int n)
 	if (!*to_find)
 		return (str);
 	ttmp = str;
-	while (str && to_find && *str && (str - ttmp) < n--)
+	while (to_find && *str &&  (str - ttmp) < n--)
 	{
 		if (*str == *to_find)
 		{
@@ -34,5 +34,5 @@ char	*ft_strnstr(char *str, char *to_find, int n)
 		}
 		str++;
 	}
-	return ((void *) 0);
+	return (LIBFT_NULL);
 }

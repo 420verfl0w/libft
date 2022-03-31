@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 14:15:57 by stales            #+#    #+#             */
-/*   Updated: 2022/03/28 14:47:40 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/31 14:55:21 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,12 @@ char	*ft_strmapi(char const *s1, char (*f)(unsigned int, char))
 
 	i = 0;
 	ptr = (char *)malloc(ft_strlen((char *)s1) + 1);
-	while (s1[i])
+	while (ptr && s1[i])
 	{
 		ptr[i] = f(i, s1[i]);
 		i++;
 	}
-	ptr[i] = 0;
+	if (ptr)
+		ptr[i] = 0;
 	return (ptr);
 }

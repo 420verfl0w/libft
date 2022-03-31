@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 14:41:41 by stales            #+#    #+#             */
-/*   Updated: 2022/02/17 17:08:16 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/31 12:14:03 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putstr(char const *s)
 	char	*tmp;
 
 	tmp = (char *)s;
-	while (*tmp)
+	while (tmp && *tmp)
 		tmp++;
 	write(1, s, tmp - s);
 }
