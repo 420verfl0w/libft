@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
+#    By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 18:23:35 by stales            #+#    #+#              #
-#    Updated: 2022/03/31 16:36:56 by stales           ###   ########.fr        #
+#    Updated: 2022/03/31 17:47:56 by brda-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,11 +42,11 @@ endef
 
 # **************************************************************************** #
 # config
-SRCS			= $(shell find . -name '*.c' -and ! -name '*bonus*' | sort)
+SRC				= $(shell find . -name '*.c' -and ! -name '*ft_lst*' | sort)
 BONUS_SRC		= $(shell find . -name '*.c' | sort)
 
-OBJS			= $(SRCS:.c=.o)
-BONUS_OBJS		= $(BONUS_SRC:.c=.o)
+OBJ				= $(SRC:.c=.o)
+BONUS_OBJ		= $(BONUS_SRC:.c=.o)
 CFLAGS			= -Wall -Wextra -Werror -I.
 NAME			= libft.a
 LIBSHARE		= libft.so
@@ -63,19 +63,19 @@ all:			$(NAME)
 	@printf "$(font_color)[$(green)+$(font_color)] Creation of the object $(bold)$< $(blinking)$(font_color)\t-> $(reset)$(bold) $@ $(reset)\n"
 	@$(CC) $(CFLAGS) -o $@ -c $<
 
-$(NAME):		$(OBJS)
+$(NAME):		$(OBJ)
 	@printf "$(font_color)[$(green)+$(font_color)] Creation of $(bold)libft.a$(reset)\n"
-	@ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJ)
 	$(print_ascii)
 
 so:
-	$(CC) -c -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o $(LIBSHARE) $(OBJS)
+	$(CC) -c -fPIC $(CFLAGS) $(SRC)
+	gcc -nostartfiles -shared -o $(LIBSHARE) $(OBJ)
 
 clean:
 	@printf "$(font_color)[$(red)-$(font_color)] Deleting object files$(reset)\n"
-	@$(RM) $(OBJS)
-	@$(RM) $(BONUS_OBJS)
+	@$(RM) $(OBJ)
+	@$(RM) $(BONUS_OBJ)
 	@$(RM) $(LIBSHARE)
 
 fclean:			clean
@@ -84,9 +84,9 @@ fclean:			clean
 
 re:				fclean $(NAME)
 
-bonus:			$(OBJS) $(BONUS_OBJS)
+bonus:			$(BONUS_OBJ)
 	@printf "$(font_color)[$(green)+$(font_color)] Creation of $(bold)libft.a$(font_color) with bonus $(reset)\n"
-	@ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+	@ar rcs $(NAME) $(BONUS_OBJ)
 	$(print_ascii)
 
 .PHONY:			all clean fclean re
