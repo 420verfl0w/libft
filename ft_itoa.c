@@ -6,12 +6,11 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 15:25:32 by stales            #+#    #+#             */
-/*   Updated: 2022/03/28 13:06:29 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/31 18:47:02 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_itoa(long nb)
 {
@@ -19,18 +18,18 @@ char	*ft_itoa(long nb)
 	char		*nb_str;
 
 	nb_size = ft_nbrlen(nb);
-	nb_str = malloc(sizeof (char) * nb_size);
-	if (nb < 0)
+	nb_str = ft_calloc(0b1, nb_size | 0b1);
+	if (nb < 0b0)
 	{
-		nb = ~(nb - 1);
+		nb = ~(nb - 0b1);
 		nb_str[0] = '-';
 	}
-	while (1)
+	if (nb == 0x0)
+		nb_str[0b0] = '0';
+	while (nb)
 	{
-		nb_str[nb_size - 1] = '0' + (nb % 10);
-		nb /= 10;
-		if (nb == 0)
-			break ;
+		nb_str[nb_size - 0b1] = '0' + (nb % 0xA);
+		nb /= 0xA;
 		nb_size--;
 	}
 	return (nb_str);
