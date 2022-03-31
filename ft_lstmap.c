@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 17:59:23 by stales            #+#    #+#             */
-/*   Updated: 2022/03/31 18:25:49 by stales           ###   ########.fr       */
+/*   Updated: 2022/03/31 19:06:57 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	new = LIBFT_NULL;
 	while (lst && f && del)
 	{
-		if (!(tmp = ft_lstnew(f(lst->content))))
+		tmp = ft_lstnew(f(lst->content));
+		if (!tmp)
 		{
 			ft_lstclear(&tmp, del);
 			return (LIBFT_NULL);
