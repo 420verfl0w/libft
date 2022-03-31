@@ -138,14 +138,14 @@ Our Libft
 |ft_memcpy			|✔️       |✔️             |
 |ft_memmove			|✔️       |✔️             |
 |ft_memset			|✔️       |✔️             |
-|ft_strchr			|✔️       |❌             |
-|ft_strdup			|✔️       |❌             |
-|ft_strlcat			|✔️       |❌             |
-|ft_strlcpy			|✔️       |❌             |
+|ft_strchr			|✔️       |✔️             |
+|ft_strdup			|✔️       |✔️             |
+|ft_strlcat			|✔️       |✔️             |
+|ft_strlcpy			|✔️       |✔️             |
 |ft_strlen			|✔️       |❌             |
 |ft_strncmp			|✔️       |❌             |
 |ft_strnstr			|✔️       |❌             |
-|ft_strrchr			|✔️       |❌             |
+|ft_strrchr			|✔️       |✔️             |
 |ft_tolower			|✔️       |❌             |
 |ft_toupper			|✔️       |❌             |
 
