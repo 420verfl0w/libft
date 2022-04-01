@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 13:18:24 by stales            #+#    #+#             */
-/*   Updated: 2022/04/01 19:46:37 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/01 20:21:50 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_substr(char const *s, unsigned int start, t_size len)
 		str[i] = *(s + start + i);
 		i++;
 	}
-		str[i] = 0;
+	str[i] = 0;
 	return (str);
 }
