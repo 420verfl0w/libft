@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 13:18:24 by stales            #+#    #+#             */
-/*   Updated: 2022/03/31 18:20:58 by brda-sil         ###   ########.fr       */
+/*   Updated: 2022/04/01 19:02:41 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ char	*ft_substr(char const *s, unsigned int start, t_size len)
 		str[i] = *(s + start + i);
 		i++;
 	}
-	str[i] = 0;
+	if (str)
+		str[i] = 0;
 	return (str);
 }
