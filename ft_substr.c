@@ -6,7 +6,7 @@
 /*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 13:18:24 by stales            #+#    #+#             */
-/*   Updated: 2022/04/01 19:02:41 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/01 19:46:37 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, t_size len)
 	t_size		i;
 
 	str = (char *)malloc(len + 1);
-	if (!str)
+	if (!str || !s)
 		return (LIBFT_NULL);
 	if ((int)start > ft_strlen((char *)s))
 		return (ft_strdup(""));
@@ -29,7 +29,6 @@ char	*ft_substr(char const *s, unsigned int start, t_size len)
 		str[i] = *(s + start + i);
 		i++;
 	}
-	if (str)
 		str[i] = 0;
 	return (str);
 }
