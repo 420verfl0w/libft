@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 13:17:18 by pix               #+#    #+#             */
-/*   Updated: 2022/02/26 14:00:35 by pix              ###   ########.fr       */
+/*   Updated: 2022/04/02 15:17:19 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	length of an integer.
+/**
+ *	@brief			length of an integer.
  *
- *	nb:		integer to take the size of.
+ *	@param nb		integer to take the size of.
  *
- * 	Return:	the length of nb, if number is negative, add +1 for the '-'.
+ *	@return (int)	the length of nb, if number is negative, add +1 for the '-'.
  */
 
 int	ft_nbrlen(long int nb)

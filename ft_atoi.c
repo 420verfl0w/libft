@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:24:34 by stales            #+#    #+#             */
-/*   Updated: 2022/04/01 20:14:40 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:11:16 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	The  ft_atoi() function converts the initial portion of the string
- *			pointed to by str to int.
+/**
+ * @brief			The  ft_atoi() function converts the initial portion of the
+ *					string pointed to by str to int.
  *
- *	*nptr:	string to convert
+ * @param nptr		string to convert
  *
- * 	Return: The converted value or 0 on error
+ * @return (int)	The converted value or 0 on error
  */
 
 int	ft_atoi(char *nptr)

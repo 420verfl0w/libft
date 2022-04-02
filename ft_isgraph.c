@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isgraph.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 13:17:11 by stales            #+#    #+#             */
-/*   Updated: 2022/02/22 13:17:58 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:17:04 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	checks if c is any printable character except space.
+/**
+ *	@brief			checks if c is any printable character except space.
  *
- *	c:		character value to check
+ *	@param c		character value to check
  *
- *	Return:	nonzero if character is any printable character except space and
- *			zero if not
+ *	@return (int)	nonzero if character is any printable character except space
+ *					zero if not
  */
 
 int	ft_isgraph(int c)

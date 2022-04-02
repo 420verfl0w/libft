@@ -3,27 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:58:06 by stales            #+#    #+#             */
-/*   Updated: 2022/03/30 17:48:04 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:18:35 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	The ft_memmove() function copies n bytes from memory area src to
- *			memory area dest. The memory areas may overlap: copying takes place
- *			as though the bytes in src are first copied into a temporary
- *			array that does not overlap src or dest, and the bytes are then
- *			copied from the temporary array to dest.
+/**
+ *	@brief			The ft_memmove() function copies n bytes from memory area
+ *					src to memory area dest. The memory areas may overlap:
+ *					copying takes place as though the bytes in src are first
+ *					copied into a temporary array that does not overlap src or
+ *					dest, and the bytes are then copied from the temporary array
+ *					to dest.
  *
- *	*dest:	destination memory area
- *	*src:	source memory area
- *	n:		number of bytes to copy
+ *	@param dest		destination memory area
+ *	@param src		source memory area
+ *	@param n		number of bytes to copy
  *
- *	Return:	The ft_memmove() function returns a pointer to dest.
+ *	@return (void *)The ft_memmove() function returns a pointer to dest.
  */
 
 void	*ft_memmove(void *dest, const void *src, t_size n)

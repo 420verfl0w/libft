@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 13:52:28 by stales            #+#    #+#             */
-/*   Updated: 2022/03/30 17:18:27 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:13:07 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	The  bzero()  function  erases  the  data in the n bytes of the
- *			memory starting at the location pointed to by s, by writing
- *			zeros (bytes containing '\0') to that area.
+/**
+ *	@brief			The  bzero()  function  erases  the  data in the n bytes of
+ *					the memory starting at the location pointed to by s, by
+ *					writing zeros (bytes containing '\0') to that area.
  *
- *	*s:		area to reset
- *	*n:		number of byte to reset
+ *	@param s		area to reset
+ *	@param n		number of byte to reset
  *
- * 	Return: None.
+ *	@return (void)	None.
  */
 
 void	ft_bzero(void *s, t_size n)

@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 03:59:45 by pix               #+#    #+#             */
-/*   Updated: 2022/02/19 14:02:28 by pix              ###   ########.fr       */
+/*   Updated: 2022/04/02 15:20:08 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	lowercase all occurence of uppercase in a string
+/**
+ *	@brief			lowercase all occurence of uppercase in a string
  *
- *	*str:	string value to convert
+ *	@param str		string value to convert
  *
- *	Return:	return converted value or NULL if error
+ *	@return (char *)return converted value or NULL if error
  */
 
 char	*ft_strlowcase(char *str)

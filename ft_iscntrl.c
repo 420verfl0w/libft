@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iscntrl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 02:31:28 by pix               #+#    #+#             */
-/*   Updated: 2022/02/19 13:48:35 by pix              ###   ########.fr       */
+/*   Updated: 2022/04/02 15:14:14 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	checks if c is a control character.
+/**
+ *	@brief			checks if c is a control character.
  *
- *	c:		character value to check
+ *	@param c		character value to check
  *
- *	Return:	nonzero if character is a control character and zero if not
+ *	@return (int)	nonzero if character is a control character and zero if not
  */
 
 int	ft_iscntrl(int c)

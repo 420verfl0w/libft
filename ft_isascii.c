@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:43:03 by pix               #+#    #+#             */
-/*   Updated: 2022/03/31 17:48:29 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:13:58 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	checks if c fit in the ascii table.
+/**
+ *	@brief			checks if c fit in the ascii table.
  *
- *	c:		character value to check
+ *	@param c		character value to check
  *
- *	Return:	nonzero if character is in the ascii table and zero if not
+ *	@return (int)		nonzero if character is in the ascii table and zero if not
  */
 
 int	ft_isascii(int c)

@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:31:21 by pix               #+#    #+#             */
-/*   Updated: 2022/03/30 18:36:11 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:13:49 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	checks if c is an alphabetic character.
+/**
+ *	@brief			checks if c is an alphabetic character.
  *
- *	c:		character value to check
+ *	@param c		character value to check
  *
- *	Return:	nonzero if character is alphabetic and zero if not
+ *	@return (int)	nonzero if character is alphabetic and zero if not
  */
 
 int	ft_isalpha(int c)

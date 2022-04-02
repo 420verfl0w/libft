@@ -3,33 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:00:23 by stales            #+#    #+#             */
-/*   Updated: 2022/03/30 18:09:38 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:18:21 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	The ft_memcmp() function compares the first n bytes (each interpreted
- *			as unsigned char) of the memory areas s1 and s2.
+/**
+ *	@brief			The ft_memcmp() function compares the first n bytes (each
+ *					interpreted as unsigned char) of the memory areas s1 and s2.
  *
- *	*s1:	memory area to compare
- *	*s2:	memory area to compare
- *	n:		number of inital bytes to analyse
+ *	@param s1		memory area to compare
+ *	@param s2		memory area to compare
+ *	@param n		number of inital bytes to analyse
  *
- *	Return:	The ft_memcmp() function returns an integer less than, equal to, or
- *			greater than zero if the first n bytes of s1 is found, respectively,
- *			to be less than, to match, or be greater than the first n bytes of
- *			s2.
+ *	@return (int)	The ft_memcmp() function returns an integer less than, equal
+ *					to, or greater than zero if the first n bytes of s1 is
+ *					found, respectively, to be less than, to match, or be
+ *					greater than the first n bytes of s2.
  *
- *			For a nonzero return value, the sign is determined by the sign of
- *			the difference between the first pair of bytes (interpreted as
- *			unsigned char) that differ in s1 and s2.
+ *					For a nonzero return value, the sign is determined by the
+ *					sign of the difference between the first pair of bytes
+ *					(interpreted as unsigned char) that differ in s1 and s2.
  *
- *			If n is zero, the return value is zero.
+ *					If n is zero, the return value is zero.
  */
 
 int	ft_memcmp(const void *s1, const void *s2, t_size n)

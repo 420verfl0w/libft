@@ -6,23 +6,23 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:33:00 by stales            #+#    #+#             */
-/*   Updated: 2022/03/31 02:13:00 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:20:16 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- *	Desc:	The ft_strlcat() function concatenate strings.
- *			appends the NUL-terminated string src to the end of dst.
+/**
+ *	@brief			The ft_strlcat() function concatenate strings.
+ *					appends the NUL-terminated string src to the end of dst.
  *
- *	*dest:	string to concatenate on
- *	*src:	string to concatenate at the end of dst
- *	size:	full size of dest
+ *	@param dest		string to concatenate on
+ *	@param src		string to concatenate at the end of dst
+ *	@param size		full size of dest
  *
- *	Return: The ft_strlcat() function return the total length of the string
- *			he tried to create. that means the initial length of dst plus the
- *			length of src.
+ *	@return (t_uint32)The ft_strlcat() function return the total length of the
+ *					string he tried to create. that means the initial length of
+ *					dst plus the length of src.
  */
 
 t_uint32	ft_strlcat(char *dest, char *src, t_size size)
