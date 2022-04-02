@@ -178,7 +178,7 @@ Our Libft
 |ft_lstdelone		|✔️       |❌             |
 |ft_lstiter			|✔️       |❌             |
 |ft_lstlast			|✔️       |❌             |
-|ft_lstmap			|❌       |❌             |
+|ft_lstmap			|✔️       |❌             |
 |ft_lstnew			|✔️       |❌             |
 |ft_lstsize			|✔️       |❌             |
 
