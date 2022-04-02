@@ -3,15 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 12:49:20 by stales            #+#    #+#             */
-/*   Updated: 2022/04/01 19:57:01 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 16:07:44 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
+
+/**
+ * @brief			write the string s to the file descriptor fd
+ *
+ * @param s			string to write
+ * @param fd		file descriptor
+ *
+ * @return (void)
+ */
 
 void	ft_putstr_fd(char const *s, int fd)
 {

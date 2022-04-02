@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 15:25:32 by stales            #+#    #+#             */
-/*   Updated: 2022/04/01 18:51:17 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:53:51 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief			The itoa() constructs a string representation of an integer.
+ *
+ * @param nb		integer to convert
+ *
+ * @return (int)	The converted value or 0 on error
+ */
 
 char	*ft_itoa(long nb)
 {

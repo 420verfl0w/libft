@@ -3,14 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 15:03:35 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 15:04:49 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 16:04:58 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief			write the string s and add a new line at the end to the
+ *					standard output
+ *
+ * @param s			string to print
+ *
+ * @return (void)
+ */
 
 void	ft_putendl(char const *s)
 {

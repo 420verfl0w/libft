@@ -3,15 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:17:07 by stales            #+#    #+#             */
-/*   Updated: 2022/03/31 14:40:20 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:57:59 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
+
+/**
+ * @brief			write the character c to the standards output
+ *
+ * @param c			character to print
+ *
+ * @return (void)
+ */
 
 void	ft_putchar(char c)
 {

@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 02:22:54 by pix               #+#    #+#             */
-/*   Updated: 2022/02/18 10:55:39 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 16:06:11 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief			write integer nb to the standard output
+ *
+ * @param nb		integer to write
+ *
+ * @return (void)
+ */
 
 void	ft_putnbr(int nb)
 {

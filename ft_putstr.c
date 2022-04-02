@@ -3,15 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 14:41:41 by stales            #+#    #+#             */
-/*   Updated: 2022/03/31 12:14:03 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 16:07:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
+
+/**
+ * @brief			write the string s to the standard output
+ *
+ * @param s			string to write
+ *
+ * @return (void)
+ */
 
 void	ft_putstr(char const *s)
 {

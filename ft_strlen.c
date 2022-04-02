@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 17:56:04 by pix               #+#    #+#             */
-/*   Updated: 2022/03/27 19:11:57 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:30:52 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ *	@brief			calculate the length of a string
+ *
+ *	@param str		string to mesure
+ *
+ *	@return (int)	length of the strings
+ */
 
 int	ft_strlen(char *str)
 {

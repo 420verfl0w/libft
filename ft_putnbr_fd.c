@@ -3,14 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 21:35:42 by stales            #+#    #+#             */
-/*   Updated: 2022/02/27 21:52:58 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 16:04:52 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief			write integer nb to the file descriptor fd
+ *
+ * @param n			integer to write
+ * @param fd		file descriptor
+ *
+ * @return (void)
+ */
 
 void	ft_putnbr_fd(int n, int fd)
 {

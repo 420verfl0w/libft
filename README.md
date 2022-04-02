@@ -142,12 +142,12 @@ Our Libft
 |ft_strdup			|✔️       |✔️             |
 |ft_strlcat			|✔️       |✔️             |
 |ft_strlcpy			|✔️       |✔️             |
-|ft_strlen			|✔️       |❌             |
-|ft_strncmp			|✔️       |❌             |
-|ft_strnstr			|✔️       |❌             |
+|ft_strlen			|✔️       |✔️             |
+|ft_strncmp			|✔️       |✔️             |
+|ft_strnstr			|✔️       |✔️             |
 |ft_strrchr			|✔️       |✔️             |
-|ft_tolower			|✔️       |❌             |
-|ft_toupper			|✔️       |❌             |
+|ft_tolower			|✔️       |✔️             |
+|ft_toupper			|✔️       |✔️             |
 
 ---
 
@@ -155,11 +155,11 @@ Our Libft
 
 |Fonctions			|is_done ?|is_documented ?|
 |:------------------|:-------:|:-------------:|
-|ft_itoa			|✔️       |❌             |
-|ft_putchar_fd		|✔️       |❌             |
-|ft_putendl_fd		|✔️       |❌             |
-|ft_putnbr_fd		|✔️       |❌             |
-|ft_putstr_fd		|✔️       |❌             |
+|ft_itoa			|✔️       |✔️             |
+|ft_putchar_fd		|✔️       |✔️             |
+|ft_putendl_fd		|✔️       |✔️             |
+|ft_putnbr_fd		|✔️       |✔️             |
+|ft_putstr_fd		|✔️       |✔️             |
 |ft_split			|✔️       |❌             |
 |ft_strjoin			|✔️       |❌             |
 |ft_strmapi			|✔️       |❌             |
@@ -199,10 +199,10 @@ Our Libft
 |ft_memalloc			|✔️       |✔️             |
 |ft_memdel				|✔️       |✔️             |
 |ft_nbrlen				|✔️       |✔️             |
-|ft_putchar				|✔️       |❌             |
-|ft_putendl				|✔️       |❌             |
-|ft_putnbr				|✔️       |❌             |
-|ft_putstr				|✔️       |❌             |
+|ft_putchar				|✔️       |✔️             |
+|ft_putendl				|✔️       |✔️             |
+|ft_putnbr				|✔️       |✔️             |
+|ft_putstr				|✔️       |✔️             |
 |ft_str_is_alpha		|✔️       |✔️             |
 |ft_str_is_lowercase	|✔️       |✔️             |
 |ft_str_is_numeric		|✔️       |✔️             |
@@ -210,7 +210,7 @@ Our Libft
 |ft_str_is_uppercase	|✔️       |✔️             |
 |ft_strcat				|✔️       |❌             |
 |ft_strclr				|✔️       |❌             |
-|ft_strcmp				|✔️       |❌             |
+|ft_strcmp				|✔️       |✔️             |
 |ft_strcpy				|✔️       |❌             |
 |ft_strdel				|✔️       |❌             |
 |ft_strequ				|✔️       |❌             |
@@ -220,7 +220,7 @@ Our Libft
 |ft_strncat				|✔️       |❌             |
 |ft_strncpy				|✔️       |❌             |
 |ft_strnew				|✔️       |❌             |
-|ft_strstr				|✔️       |❌             |
+|ft_strstr				|✔️       |✔️             |
 |ft_strupcase			|✔️       |✔️             |
 |ft_swap				|✔️       |❌             |
 |ft_rev_int				|✔️       |❌             |

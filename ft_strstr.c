@@ -3,14 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 21:54:11 by stales            #+#    #+#             */
-/*   Updated: 2022/03/31 11:00:22 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/02 15:44:13 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ *	@brief			The ft_strstr() function locates the first occurrence of the
+ *					null-terminated string to_find in the null-terminated string
+ *					str.
+ *
+ *	@param str		the "haystack"
+ *	@param to_find	the "needle"
+ *
+ *	@return (char *)If to_find is an empty string, str is returned; if to_find
+ *					occurs nowhere in str, LIBFT_NULL is returned; otherwise a
+ *					pointer to the first character of the first occurrence of
+ *					to_find is returned.
+ */
 
 char	*ft_strstr(char *str, char *to_find)
 {
