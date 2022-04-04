@@ -6,7 +6,7 @@
 #    By: stales <stales@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 18:23:35 by stales            #+#    #+#              #
-#    Updated: 2022/04/04 17:50:55 by stales           ###   ########.fr        #
+#    Updated: 2022/04/04 17:59:49 by stales           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -132,7 +132,7 @@ BASE_SRC		:= ft_atoi.c \
 
 BONUS_SRC		:= $(BASE_SRC) \
 				   ft_lstadd_back_bonus.c \
-				   ft_lstadd_front_bonu.c \
+				   ft_lstadd_front_bonus.c \
 				   ft_lstclear_bonus.c \
 				   ft_lstdelone_bonus.c \
 				   ft_lstiter_bonus.c \
