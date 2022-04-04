@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 14:45:02 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 14:48:23 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/04 03:06:42 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief			Reverse a string
+ *
+ * @param nb		String to reverse
+ *
+ * @return (char *)	Reversed string
+ */
 
 char	*ft_strrev(char *str)
 {

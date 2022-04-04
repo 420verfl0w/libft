@@ -3,23 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 02:22:54 by pix               #+#    #+#             */
-/*   Updated: 2022/04/02 16:06:11 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/04 02:58:12 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief			write integer nb to the standard output
+ * @brief			Write integer nb to the standard output
  *
- * @param nb		integer to write
+ * @param nb		Integer to write
  *
- * @return (void)
+ * @return (void)	None.
  */
-
 void	ft_putnbr(int nb)
 {
 	if (nb > 2147483647)

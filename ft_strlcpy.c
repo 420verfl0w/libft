@@ -3,29 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:07:10 by stales            #+#    #+#             */
-/*   Updated: 2022/04/02 15:20:12 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/04 03:03:28 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- *	@brief			The ft_strlcpy() function copy strings.
- *					function copies up to size - 1 characters from the
+ * @brief			Copy strings. copies up to size - 1 characters from the
  *					NULL-terminated string src to dst, NUL-terminating the
  *					result.
  *
- *	@param dest		string to copy on
- *	@param src		string to copy from
- *	@param size		full size of dest
+ * @param dest		String to copy on
+ * @param src		String to copy from
+ * @param size		Full size of dest
  *
- *	@return (t_uint32)The ft_strlcat() function return the total length of the
+ * @return (t_uint32)The ft_strlcat() function return the total length of the
  *					string he tried to create. that means the length of src.
  */
-
 t_uint32	ft_strlcpy(char *dest, char *src, t_size size)
 {
 	char			*tmp;

@@ -3,15 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 11:06:28 by stales            #+#    #+#             */
-/*   Updated: 2022/02/18 11:14:07 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/04 02:58:41 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief			Reverse an integer
+ *
+ * @param nb		Number to reverse
+ *
+ * @return (int)	Reversed integer
+ */
 int	ft_rev_int(int nb)
 {
 	int	r;

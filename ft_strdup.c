@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:30:46 by pix               #+#    #+#             */
-/*   Updated: 2022/04/02 15:19:30 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/04 03:02:12 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,13 @@
 #include <stdlib.h>
 
 /**
- *	@brief			The  strdup() function returns a pointer to a new string
- *					which is a duplicate of the string s.
+ * @brief			Returns a pointer to a new string which is a duplicate of
+ *					the string s.
  *
- *	@param src		string to copy
+ * @param src		String to copy
  *
- *	@return (char *)On success, the strdup() function returns a pointer to the
- *					duplicated string.
+ * @return (char *)	On success, returns a pointer to the duplicated string.
  */
-
 char	*ft_strdup(char *src)
 {
 	char	*tmp;

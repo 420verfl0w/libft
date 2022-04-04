@@ -3,16 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 13:58:41 by stales            #+#    #+#             */
-/*   Updated: 2022/04/01 19:47:51 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/04 03:02:43 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
+/**
+ * @brief			Concatenate two strings
+ *
+ * @param s1		Prefix string
+ * @param s2		Suffix string
+ *
+ * @return (char *)	Allocated and joined string
+ */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	t_size	size;

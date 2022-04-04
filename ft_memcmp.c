@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:00:23 by stales            #+#    #+#             */
-/*   Updated: 2022/04/02 15:18:21 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/04 02:55:59 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- *	@brief			The ft_memcmp() function compares the first n bytes (each
- *					interpreted as unsigned char) of the memory areas s1 and s2.
+ * @brief			Compares the first n bytes (each interpreted as unsigned
+ *					char) of the memory areas s1 and s2.
  *
- *	@param s1		memory area to compare
- *	@param s2		memory area to compare
- *	@param n		number of inital bytes to analyse
+ * @param s1		Memory area to compare
+ * @param s2		Memory area to compare
+ * @param n			Number of inital bytes to analyse
  *
- *	@return (int)	The ft_memcmp() function returns an integer less than, equal
+ * @return (int)	The ft_memcmp() function returns an integer less than, equal
  *					to, or greater than zero if the first n bytes of s1 is
  *					found, respectively, to be less than, to match, or be
  *					greater than the first n bytes of s2.
@@ -31,7 +31,6 @@
  *
  *					If n is zero, the return value is zero.
  */
-
 int	ft_memcmp(const void *s1, const void *s2, t_size n)
 {
 	unsigned char	*ts1;

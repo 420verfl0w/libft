@@ -3,23 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isblank.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 19:49:48 by pix               #+#    #+#             */
-/*   Updated: 2022/04/02 15:14:06 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/04 02:54:48 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- *	@brief			checks if c is a blank character; that is, a space or a tab.
+ * @brief			Checks if c is a blank character; that is, a space or a tab.
  *
- *	@param c		character value to check
+ * @param c			Character value to check
  *
- *	@return (int)	nonzero if character is a blank character and zero if not
+ * @return (int)	Nonzero if character is a blank character and zero if not
  */
-
 int	ft_isblank(int c)
 {
 	return (c == ' ' || c == '\t');

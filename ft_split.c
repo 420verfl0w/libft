@@ -3,16 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 22:01:09 by stales            #+#    #+#             */
-/*   Updated: 2022/04/01 18:56:59 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/04 02:58:51 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
+/**
+ * @brief			Split string s with c as separator
+ *
+ * @param c			Character as separator
+ * @param s			String to return
+ *
+ * @return (char **)Allocated list of separated string, termined by NULL char
+ */
 char	*init_str(char *s, char c)
 {
 	int		i;

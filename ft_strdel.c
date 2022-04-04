@@ -3,16 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 13:13:32 by stales            #+#    #+#             */
-/*   Updated: 2022/03/31 11:14:11 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/04 03:01:53 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
+/**
+ * @brief			Delete a string
+ *
+ * @param dest		String to delete
+ *
+ * @return (void)	None.
+ */
 void	ft_strdel(char **as)
 {
 	if (!as)

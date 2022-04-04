@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 14:41:41 by stales            #+#    #+#             */
-/*   Updated: 2022/04/02 16:07:29 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/04 02:58:30 by pix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 #include <unistd.h>
 
 /**
- * @brief			write the string s to the standard output
+ * @brief			Write the string s to the standard output
  *
- * @param s			string to write
+ * @param s			String to write
  *
- * @return (void)
+ * @return (void)	None.
  */
-
 void	ft_putstr(char const *s)
 {
 	char	*tmp;

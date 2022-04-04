@@ -160,11 +160,11 @@ Our Libft
 |ft_putendl_fd		|✔️       |✔️             |
 |ft_putnbr_fd		|✔️       |✔️             |
 |ft_putstr_fd		|✔️       |✔️             |
-|ft_split			|✔️       |❌             |
-|ft_strjoin			|✔️       |❌             |
-|ft_strmapi			|✔️       |❌             |
-|ft_strtrim			|✔️       |❌             |
-|ft_substr			|✔️       |❌             |
+|ft_split			|✔️       |✔️             |
+|ft_strjoin			|✔️       |✔️             |
+|ft_strmapi			|✔️       |✔️             |
+|ft_strtrim			|✔️       |✔️             |
+|ft_substr			|✔️       |✔️             |
 
 ---
 
@@ -208,22 +208,22 @@ Our Libft
 |ft_str_is_numeric		|✔️       |✔️             |
 |ft_str_is_printable	|✔️       |✔️             |
 |ft_str_is_uppercase	|✔️       |✔️             |
-|ft_strcat				|✔️       |❌             |
-|ft_strclr				|✔️       |❌             |
+|ft_strcat				|✔️       |✔️             |
+|ft_strclr				|✔️       |✔️             |
 |ft_strcmp				|✔️       |✔️             |
-|ft_strcpy				|✔️       |❌             |
-|ft_strdel				|✔️       |❌             |
-|ft_strequ				|✔️       |❌             |
-|ft_striteri			|✔️       |❌             |
+|ft_strcpy				|✔️       |✔️             |
+|ft_strdel				|✔️       |✔️             |
+|ft_strequ				|❌       |❌             |
+|ft_striteri			|✔️       |✔️             |
 |ft_strlowcase			|✔️       |✔️             |
-|ft_strmap				|✔️       |❌             |
-|ft_strncat				|✔️       |❌             |
-|ft_strncpy				|✔️       |❌             |
-|ft_strnew				|✔️       |❌             |
+|ft_strmap				|❌       |❌             |
+|ft_strncat				|✔️       |✔️             |
+|ft_strncpy				|✔️       |✔️             |
+|ft_strnew				|✔️       |✔️             |
 |ft_strstr				|✔️       |✔️             |
 |ft_strupcase			|✔️       |✔️             |
-|ft_swap				|✔️       |❌             |
-|ft_rev_int				|✔️       |❌             |
+|ft_swap				|✔️       |✔️             |
+|ft_rev_int				|✔️       |✔️             |
 |ft_strrev				|✔️       |❌             |
 |ft_strtok				|✔️       |❌             |
 |ft_strsnp				|✔️       |❌             |
