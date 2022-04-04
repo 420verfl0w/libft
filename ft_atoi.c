@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
+/*   By: brda-sil <brda-sil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:24:34 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 14:43:52 by stales           ###   ########.fr       */
+/*   Updated: 2022/04/04 16:03:57 by brda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
  */
 int	ft_atoi(char *nptr)
 {
-	int		to_dec;
-	int		neg;
+	long int	to_dec;
+	int			neg;
 
 	to_dec = 0;
 	neg = 1;
@@ -34,5 +34,9 @@ int	ft_atoi(char *nptr)
 			neg = ~(neg - 1);
 	while (*nptr >= '0' && *nptr <= '9')
 		to_dec = (to_dec * 0xA) + (*nptr++ & 0xF);
+	if (neg == -1 && to_dec < -2147483648)
+		return (0);
+	if (neg && to_dec < -2147483648)
+		return (-1);
 	return (to_dec * neg);
 }
