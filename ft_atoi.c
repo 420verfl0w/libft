@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pix <pix@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: stales <stales@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:24:34 by stales            #+#    #+#             */
-/*   Updated: 2022/04/04 02:54:22 by pix              ###   ########.fr       */
+/*   Updated: 2022/04/04 14:43:52 by stales           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,6 @@ int	ft_atoi(char *nptr)
 		if (*nptr++ == '-')
 			neg = ~(neg - 1);
 	while (*nptr >= '0' && *nptr <= '9')
-	{
-		to_dec *= 0xA;
-		to_dec += *nptr++ & 0xF;
-	}
+		to_dec = (to_dec * 0xA) + (*nptr++ & 0xF);
 	return (to_dec * neg);
 }
